@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Parameter Mappers - JuniorRoute</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="../../favicon.ico">
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/pygments.css">
+		<script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="header">
+	<h1>JuniorRoute</h1>
+	<h2>the easy-to-learn, easy-to-use routing framework for .NET</h2>
+</div>
+		<div class="header-links">
+	<div class="link-container-left menu" -data-menu="documentation-menu">
+		<a href="../../documentation/1.0/quick_start.html">Documentation</a>
+		<div class="menu-drop-down documentation-menu visuallyhidden">
+			<a href="../../documentation/1.0/quick_start.html">Version 1.0</a>
+		</div>
+	</div>
+	<div class="link-container-left menu" -data-menu="resources-menu">
+		<span class="dummy">Resources</span>
+		<div class="menu-drop-down resources-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorRoute" target="_blank">Respository</a><br/>
+			<a href="https://github.com/NathanAlden/JuniorRoute/wiki" target="_blank">Wiki</a>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="link-container-right menu" -data-menu="other-projects-menu">
+		<a href="https://github.com/NathanAlden" target="_blank">Other Projects by Nathan Alden, Sr.</a>
+		<div class="menu-drop-down other-projects-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorPersist">JuniorPersist</a></br>
+			<a href="https://github.com/NathanAlden/JuniorMap">JuniorMap</a></br>
+			<a href="https://github.com/NathanAlden/FirefoxAutoRefresh">Firefox Auto Refresh</a></br>
+			<a href="https://github.com/NathanAlden" class="and-more">...and more!</a>
+		</div>
+	</div>
+</div>
+		<div class="documentation">
+	<div class="navigation">
+		<a href="../../index.html">Introduction</a>
+		<div class="section">
+			<a href="../../understanding_http_1.1.html">Understanding HTTP 1.1</a><br/>
+		</div>
+		<div class="section documentation-version">Version 1.0 Documentation</div>
+		<div class="section">
+			<a href="../../documentation/1.0/quick_start.html" class="quick-start">Quick-start</a><br/>
+		</div>
+		<div class="section">Core concepts</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/routes.html">Routes</a><br/>
+			<a href="../../documentation/1.0/route_collections.html">Route collections</a><br/>
+			<a href="../../documentation/1.0/restrictions.html">Restrictions</a><br/>
+			<a href="../../documentation/1.0/responses.html">Responses</a><br/>
+			<a href="../../documentation/1.0/caching.html">Caching</a><br/>
+			<a href="../../documentation/1.0/authentication_providers.html">Authentication providers</a><br/>
+			<a href="../../documentation/1.0/request_value_comparers.html">Request value comparers</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">URL resolvers</a>
+		</div>
+		<div class="section">Asset management</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/assets.html">Assets</a><br/>
+			<a href="../../documentation/1.0/bundles.html">Bundles</a><br/>
+			<a href="../../documentation/1.0/asset_concatenators.html">Asset Concatenators</a><br/>
+			<a href="../../documentation/1.0/asset_transformers.html">Asset Transformers</a><br/>
+			<a href="../../documentation/1.0/bundle_watchers.html">Bundle watchers</a><br/>
+			<a href="../../documentation/1.0/bundle_watcher_routes.html">Bundle watcher routes</a>
+		</div>
+		<div class="section">
+			<a href="../../documentation/1.0/diagnostics.html">Diagnostics</a>
+			<div class="section-links">
+				<a href="../../documentation/1.0/diagnosticroutehelper.html">DiagnosticRouteHelper</a><br/>
+				<a href="../../documentation/1.0/diagnostic_configurations.html">Diagnostic configurations</a>
+			</div>
+		</div>
+		<div class="section">ASP.net integration</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/juniorrouteapplication.html">JuniorRouteApplication</a><br/>
+			<a href="../../documentation/1.0/juniorrouteapplicationconfiguration.html">JuniorRouteApplicationConfiguration</a><br/>
+			<a href="../../documentation/1.0/aspnethttphandler.html">AspNetHttpHandler</a><br/>
+			<a href="../../documentation/1.0/response_generators.html">Response generators</a><br/>
+			<a href="../../documentation/1.0/response_handlers.html">Response handlers</a><br/>
+			<a href="../../documentation/1.0/file_systems.html">FileSystem</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">UrlResolver</a>
+		</div>
+		<a href="../../documentation/1.0/auto_routing.html">Auto-routing</a>
+		<div class="section-links">
+			<a href="../../documentation/1.0/autoroutecollection.html">AutoRouteCollection</a><br/>
+			<a href="../../documentation/1.0/containers.html">Containers</a><br/>
+			<a href="../../documentation/1.0/class_filters.html">Class filters</a><br/>
+			<a href="../../documentation/1.0/method_filters.html">Method filters</a><br/>
+			<a href="../../documentation/1.0/name_mappers.html">Name mappers</a><br/>
+			<a href="../../documentation/1.0/id_mappers.html">ID mappers</a><br/>
+			<a href="../../documentation/1.0/resolved_relative_url_mappers.html">Resolved relative URL mappers</a><br/>
+			<a href="../../documentation/1.0/restriction_mappers.html">Restriction mappers</a><br/>
+			<a href="../../documentation/1.0/parameter_mappers.html">Parameter mappers</a><br/>
+			<a href="../../documentation/1.0/model_property_mappers.html">Model property mappers</a><br/>
+			<a href="../../documentation/1.0/response_mappers.html">Response mappers</a><br/>
+			<a href="../../documentation/1.0/authentication_strategies.html">Authentication strategies</a><br/>
+			<a href="../../documentation/1.0/forms_authentication.html">Forms authentication</a><br/>
+			<a href="../../documentation/1.0/request_contexts.html">Request contexts</a>
+		</div>
+	</div>
+	<div class="document"><h1 id='autorouting__parameter_mappers'>Auto-routing - Parameter Mappers</h1>
+
+<p>Parameter mappers map HTTP request message values to endpoint method parameters. Parameter mappers are used by <a href='../../documentation/1.0/response_mappers.html'><code>ResponseMethodReturnTypeMapper</code></a> to pass parameter values to endpoint methods when they are invoked.</p>
+
+<p>Parameter mappers have two responsibilites:</p>
+
+<ul>
+<li>determining if a particular parameter type can be mapped by the parameter mapper implementation</li>
+
+<li>mapping a HTTP request message value to a parameter</li>
+</ul>
+
+<p>Parameter mappers are called until one of them maps the parameter. If no parameter mappers map a parameter, an exception is thrown.</p>
+
+<p>JuniorRoute provides five built-in implementations:</p>
+
+<ul>
+<li><code>DefaultValueMapper</code></li>
+
+<li><code>FormToIConvertibleMapper</code></li>
+
+<li><code>JsonModelMapper</code></li>
+
+<li><code>ModelMapper</code></li>
+
+<li><code>QueryStringToIConvertibleMapper</code></li>
+</ul>
+
+<h2 id='defaultvaluemapper'>DefaultValueMapper</h2>
+
+<p>This mapper maps a parameter value to its type&#8217;s default value. For reference types, the value is <code>null</code> and for value types, the value is <code>default(T)</code>.</p>
+
+<p>In the below example, a <code>DefaultValueMapper</code> is instantiated.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>DefaultValueMapper</span><span class='p'>();</span>
+</code></pre>
+</div>
+<h2 id='formtoiconvertiblemapper'>FormToIConvertibleMapper</h2>
+
+<p>This mapper maps form values supplied in the HTTP request message to parameters with the same name as the form field and also with parameter types implementing <code>IConvertible</code>. The name matching is optionally case-sensitive. A constructor parameter provides a choice of throwing an exception or mapping the default value if a name match is found but the form value cannot be converted.</p>
+
+<p>In the below example, a <code>FormToIConvertibleMapper</code> instance is configured to map form fields case-insensitively and throw an exception if a conversion fails.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>FormToIConvertibleMapper</span><span class='p'>(</span><span class='k'>true</span><span class='p'>,</span> <span class='n'>DataConversionErrorHandling</span><span class='p'>.</span><span class='n'>ThrowException</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='jsonmodelmapper'>JsonModelMapper</h2>
+
+<p>This mapper maps the JSON body of a HTTP request message to a custom model type by using Json.NET. One of the constructor parameters is a delegate that determines which parameter types can be mapped by the <code>JsonModelMapper</code> instance. Developers may choose to use the constructor overloads that do not take this delegate; in that case, parameter types whose names end with <em>Model</em> are eligible for mapping. Developers may optionally provide a <code>JsonSerializerSettings</code> instance to control how Json.NET deserializes the request body. A constructor parameter provides a choice of throwing an exception or mapping the default value if a type match is found but the request body cannot be converted.</p>
+
+<p>In the below example, a <code>JsonModelMapper</code> instance is configured to map request bodies for types whose names end with <em>JsonModel</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>JsonModelMapper</span><span class='p'>(</span><span class='n'>type</span> <span class='p'>=&gt;</span> <span class='n'>type</span><span class='p'>.</span><span class='n'>Name</span><span class='p'>.</span><span class='n'>EndsWith</span><span class='p'>(</span><span class='s'>&quot;JsonModel&quot;</span><span class='p'>));</span>
+</code></pre>
+</div>
+<h2 id='modelmapper'>ModelMapper</h2>
+
+<p>This mapper maps a HTTP request message to a custom mode type by using the specified <a href='../../documentation/1.0/model_property_mappers.html'>model property mappers</a>. One of the constructor parameters is a delegate that determines which parameter types can be mapped by the <code>ModelMapper</code> instance. Developers may choose to use the constructor overloads that do not take this delegate; in that case, parameter types whose names end with <em>Model</em> are eligible for mapping. Developers may optionally provide an <a href='../../documentation/1.0/containers.html'><code>IContainer</code></a> implementation that will be used to get instances of the model types. If no container is provided, the types are created with <code>Activator.CreateInstance</code>.</p>
+
+<p>In the below example, a <code>ModelMapper</code> instance is configured to map requests for types whose naems end with <em>CustomModel</em>. Types are instantiated using a container. A <code>FormToIConvertibleMapper</code> is used as the only parameter mapper.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>ModelMapper</span><span class='p'>(</span><span class='n'>container</span><span class='p'>,</span> <span class='n'>type</span> <span class='p'>=&gt;</span> <span class='n'>type</span><span class='p'>.</span><span class='n'>Name</span><span class='p'>.</span><span class='n'>EndsWith</span><span class='p'>(</span><span class='s'>&quot;CustomModel&quot;</span><span class='p'>));</span>
+</code></pre>
+</div>
+<h2 id='querystringtoiconvertiblemapper'>QueryStringToIConvertibleMapper</h2>
+
+<p>This mapper maps query string fields supplied in the HTTP request message to parameters with the same name as the query string field and also with parameter types implementing <code>IConvertible</code>. The name matching is optionally case-sensitive. A constructor parameter provides a choice of throwing an exception or mapping the default value if a name match is found but the query string value cannot be converted.</p>
+
+<p>In the below example, a <code>QueryStringToIConvertibleMapper</code> instance is configured to map query string fields case-insensitively and throw an exception if a conversion fails.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>QueryStringToIConvertibleMapper</span><span class='p'>(</span><span class='k'>true</span><span class='p'>,</span> <span class='n'>DataConversionErrorHandling</span><span class='p'>.</span><span class='n'>ThrowException</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='extensibility'>Extensibility</h2>
+
+<p>Developers may create their own parameter mappers by implementing the <code>IParameterMapper</code> interface.</p></div>
+</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="../../js/plugins.js"></script>
+		<script>
+			var _gaq=[['_setAccount','UA-36144505-1'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+    </body>
+</html>

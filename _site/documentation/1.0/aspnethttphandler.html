@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>AspNetHttpHandler - JuniorRoute</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="../../favicon.ico">
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/pygments.css">
+		<script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="header">
+	<h1>JuniorRoute</h1>
+	<h2>the easy-to-learn, easy-to-use routing framework for .NET</h2>
+</div>
+		<div class="header-links">
+	<div class="link-container-left menu" -data-menu="documentation-menu">
+		<a href="../../documentation/1.0/quick_start.html">Documentation</a>
+		<div class="menu-drop-down documentation-menu visuallyhidden">
+			<a href="../../documentation/1.0/quick_start.html">Version 1.0</a>
+		</div>
+	</div>
+	<div class="link-container-left menu" -data-menu="resources-menu">
+		<span class="dummy">Resources</span>
+		<div class="menu-drop-down resources-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorRoute" target="_blank">Respository</a><br/>
+			<a href="https://github.com/NathanAlden/JuniorRoute/wiki" target="_blank">Wiki</a>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="link-container-right menu" -data-menu="other-projects-menu">
+		<a href="https://github.com/NathanAlden" target="_blank">Other Projects by Nathan Alden, Sr.</a>
+		<div class="menu-drop-down other-projects-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorPersist">JuniorPersist</a></br>
+			<a href="https://github.com/NathanAlden/JuniorMap">JuniorMap</a></br>
+			<a href="https://github.com/NathanAlden/FirefoxAutoRefresh">Firefox Auto Refresh</a></br>
+			<a href="https://github.com/NathanAlden" class="and-more">...and more!</a>
+		</div>
+	</div>
+</div>
+		<div class="documentation">
+	<div class="navigation">
+		<a href="../../index.html">Introduction</a>
+		<div class="section">
+			<a href="../../understanding_http_1.1.html">Understanding HTTP 1.1</a><br/>
+		</div>
+		<div class="section documentation-version">Version 1.0 Documentation</div>
+		<div class="section">
+			<a href="../../documentation/1.0/quick_start.html" class="quick-start">Quick-start</a><br/>
+		</div>
+		<div class="section">Core concepts</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/routes.html">Routes</a><br/>
+			<a href="../../documentation/1.0/route_collections.html">Route collections</a><br/>
+			<a href="../../documentation/1.0/restrictions.html">Restrictions</a><br/>
+			<a href="../../documentation/1.0/responses.html">Responses</a><br/>
+			<a href="../../documentation/1.0/caching.html">Caching</a><br/>
+			<a href="../../documentation/1.0/authentication_providers.html">Authentication providers</a><br/>
+			<a href="../../documentation/1.0/request_value_comparers.html">Request value comparers</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">URL resolvers</a>
+		</div>
+		<div class="section">Asset management</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/assets.html">Assets</a><br/>
+			<a href="../../documentation/1.0/bundles.html">Bundles</a><br/>
+			<a href="../../documentation/1.0/asset_concatenators.html">Asset Concatenators</a><br/>
+			<a href="../../documentation/1.0/asset_transformers.html">Asset Transformers</a><br/>
+			<a href="../../documentation/1.0/bundle_watchers.html">Bundle watchers</a><br/>
+			<a href="../../documentation/1.0/bundle_watcher_routes.html">Bundle watcher routes</a>
+		</div>
+		<div class="section">
+			<a href="../../documentation/1.0/diagnostics.html">Diagnostics</a>
+			<div class="section-links">
+				<a href="../../documentation/1.0/diagnosticroutehelper.html">DiagnosticRouteHelper</a><br/>
+				<a href="../../documentation/1.0/diagnostic_configurations.html">Diagnostic configurations</a>
+			</div>
+		</div>
+		<div class="section">ASP.net integration</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/juniorrouteapplication.html">JuniorRouteApplication</a><br/>
+			<a href="../../documentation/1.0/juniorrouteapplicationconfiguration.html">JuniorRouteApplicationConfiguration</a><br/>
+			<a href="../../documentation/1.0/aspnethttphandler.html">AspNetHttpHandler</a><br/>
+			<a href="../../documentation/1.0/response_generators.html">Response generators</a><br/>
+			<a href="../../documentation/1.0/response_handlers.html">Response handlers</a><br/>
+			<a href="../../documentation/1.0/file_systems.html">FileSystem</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">UrlResolver</a>
+		</div>
+		<a href="../../documentation/1.0/auto_routing.html">Auto-routing</a>
+		<div class="section-links">
+			<a href="../../documentation/1.0/autoroutecollection.html">AutoRouteCollection</a><br/>
+			<a href="../../documentation/1.0/containers.html">Containers</a><br/>
+			<a href="../../documentation/1.0/class_filters.html">Class filters</a><br/>
+			<a href="../../documentation/1.0/method_filters.html">Method filters</a><br/>
+			<a href="../../documentation/1.0/name_mappers.html">Name mappers</a><br/>
+			<a href="../../documentation/1.0/id_mappers.html">ID mappers</a><br/>
+			<a href="../../documentation/1.0/resolved_relative_url_mappers.html">Resolved relative URL mappers</a><br/>
+			<a href="../../documentation/1.0/restriction_mappers.html">Restriction mappers</a><br/>
+			<a href="../../documentation/1.0/parameter_mappers.html">Parameter mappers</a><br/>
+			<a href="../../documentation/1.0/model_property_mappers.html">Model property mappers</a><br/>
+			<a href="../../documentation/1.0/response_mappers.html">Response mappers</a><br/>
+			<a href="../../documentation/1.0/authentication_strategies.html">Authentication strategies</a><br/>
+			<a href="../../documentation/1.0/forms_authentication.html">Forms authentication</a><br/>
+			<a href="../../documentation/1.0/request_contexts.html">Request contexts</a>
+		</div>
+	</div>
+	<div class="document"><h1 id='aspnet_integration__aspnethttphandler'>ASP.net Integration - AspNetHttpHandler</h1>
+
+<p>Hooking into the ASP.net pipeline requires an implementation of <code>IHttpHandler</code>. JuniorRoute provides the built-in <code>AspNetHttpHandler</code> implementation to accommodate that requirement. <code>AspNetHttpHandler</code> requires the following:</p>
+
+<ul>
+<li>A <a href='../../documentation/1.0/route_collections.html'>route collection</a></li>
+
+<li>A cache implementation</li>
+
+<li>A set of <a href='../../documentation/1.0/response_generators.html'>response generators</a></li>
+
+<li>A set of <a href='../../documentation/1.0/response_handlers.html'>response handlers</a></li>
+</ul>
+
+<p><code>AspNetHttpHandler</code> is a <a href='http://en.wikipedia.org/wiki/Front_Controller_pattern'>front controller</a>; it handles all incoming HTTP requests to the Web application. HTTP requests are handled in three phases:</p>
+
+<ul>
+<li>Route matching</li>
+
+<li>Response generation</li>
+
+<li>Response handling</li>
+</ul>
+
+<h2 id='route_matching'>Route Matching</h2>
+
+<p>In the route matching phase, all routes in the route collection are matched against the HTTP request message. The results of every route match operation are supplied to the next phase.</p>
+
+<h2 id='response_generation'>Response Generation</h2>
+
+<p>In the response generation phase, the provided response generators are called in succession until one of them generates a <a href='../../documentation/1.0/responses.html'>response</a>. During this phase, responses are merely suggestions; no response is actually written to the ASP.net pipeline. Responses may be generated even if no routes matched the HTTP request message; in fact, it is desirable to generate a 404 Not Found response when no routes match. If no response generators generate a response, an exception is thrown. The results of a successful response generation are supplied to the next phase.</p>
+
+<h2 id='response_handling'>Response Handling</h2>
+
+<p>In the response handling phase, the provided response handlers are called in succession until one of them writes the response to the ASP.net pipeline. Response handlers may choose to suggest a new response in place of the generated response; in this case, subsequent response handlers receive the suggested response. If no response handler writes a response to the ASP.net pipeline, an exception is thrown.</p></div>
+</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="../../js/plugins.js"></script>
+		<script>
+			var _gaq=[['_setAccount','UA-36144505-1'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+    </body>
+</html>

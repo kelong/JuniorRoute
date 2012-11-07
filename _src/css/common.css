@@ -1,0 +1,180 @@
+/* Global */
+body
+{
+	color: #212c39;
+	font-family: Georgia, sans-serif;
+}
+a, a:hover, a:visited, a:active
+{
+	color: #0073ff;
+	text-decoration: none;
+}
+code
+{
+	background-color: #eee;
+	font-family: Consolas, Lucida Console, Courier New, sans-serif;
+	font-size: 14px;
+}
+
+/* Header */
+.header
+{
+	background-color: #0b3565;
+	color: #fff;
+	padding: 10px 20px;
+}
+.header h1
+{
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-shadow: 1px 1px 2px rgba(128, 128, 128, 1);
+}
+.header h2
+{
+	font-size: 1em;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1em;
+	margin: 5px 0 0 0;
+	padding-bottom: 10px;
+}
+.header-links
+{
+	background-color: #607c9d;
+	display: table;
+	width: 100%;
+}
+.header-links a
+{
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+	white-space: nowrap;
+}
+.header-links a:hover
+{
+	color: #ffff00;
+}
+.header-links .link-container-left
+{
+	border-right: 1px #a1aebd solid;
+	display: table-cell;
+}
+.header-links .spacer
+{
+	display: table-cell;
+	width: 100%;
+}
+.header-links .link-container-right
+{
+	border-left: 1px #a1aebd solid;
+	display: table-cell;
+}
+.header-links .dummy
+{
+	color: #fff;
+	cursor: default;
+	display: inline-block;
+	padding: 5px 10px;
+	white-space: nowrap;
+}
+.header-links .menu-drop-down
+{
+	background-color: #607c9d;
+	position: absolute;
+}
+.header-links .menu-drop-down
+{
+	border-top: 1px solid #0b3565;
+}
+.header-links .menu-open
+{
+	color: #ffff00;
+}
+.header-links .and-more
+{
+	color: #ddd;
+	display: inline-block;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+/* Documentation */
+.documentation
+{
+	display: table;
+	width: 100%;
+}
+.documentation .navigation
+{
+	background-color: #e1e7ef;
+	display: table-cell;
+	height: 100%;
+	padding: 10px;
+	vertical-align: top;
+	white-space: nowrap;
+}
+.documentation .navigation a
+{
+	display: inline-block;
+}
+.documentation .documentation-version
+{
+	border-top: 1px solid #a3b5c9;
+	font-weight: bold;
+	padding-top: 5px;
+}
+.documentation .navigation .section
+{
+	margin-top: 10px;
+}
+.documentation .navigation .section-links
+{
+	padding-left: 15px;
+}
+.documentation .quick-start
+{
+	color: #ff3c00;
+	font-weight: bold;
+}
+.documentation .document
+{
+	display: table-cell;
+	padding: 10px;
+	vertical-align: top;
+	width: 100%;
+}
+.documentation .document h1
+{
+	border-bottom: 1px solid #b5c0cd;
+	font-size: 2em;
+	font-weight: normal;
+	margin: 0;
+}
+.documentation .document h2
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0;
+}
+.documentation .document h3
+{
+	font-size: 1em !important;
+	font-weight: bold !important;
+	margin: 0;
+}
+.documentation .document p
+{
+	margin: 1em 0;
+}
+.documentation .document pre
+{
+	background-color: #eee;
+	border: 1px dashed #aaa;
+	border-radius: 5px;
+	font-family: Consolas, Lucida Console, Courier New, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+}

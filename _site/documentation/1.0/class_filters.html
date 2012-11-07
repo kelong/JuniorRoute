@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Class Filters - JuniorRoute</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="../../favicon.ico">
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/pygments.css">
+		<script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="header">
+	<h1>JuniorRoute</h1>
+	<h2>the easy-to-learn, easy-to-use routing framework for .NET</h2>
+</div>
+		<div class="header-links">
+	<div class="link-container-left menu" -data-menu="documentation-menu">
+		<a href="../../documentation/1.0/quick_start.html">Documentation</a>
+		<div class="menu-drop-down documentation-menu visuallyhidden">
+			<a href="../../documentation/1.0/quick_start.html">Version 1.0</a>
+		</div>
+	</div>
+	<div class="link-container-left menu" -data-menu="resources-menu">
+		<span class="dummy">Resources</span>
+		<div class="menu-drop-down resources-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorRoute" target="_blank">Respository</a><br/>
+			<a href="https://github.com/NathanAlden/JuniorRoute/wiki" target="_blank">Wiki</a>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="link-container-right menu" -data-menu="other-projects-menu">
+		<a href="https://github.com/NathanAlden" target="_blank">Other Projects by Nathan Alden, Sr.</a>
+		<div class="menu-drop-down other-projects-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorPersist">JuniorPersist</a></br>
+			<a href="https://github.com/NathanAlden/JuniorMap">JuniorMap</a></br>
+			<a href="https://github.com/NathanAlden/FirefoxAutoRefresh">Firefox Auto Refresh</a></br>
+			<a href="https://github.com/NathanAlden" class="and-more">...and more!</a>
+		</div>
+	</div>
+</div>
+		<div class="documentation">
+	<div class="navigation">
+		<a href="../../index.html">Introduction</a>
+		<div class="section">
+			<a href="../../understanding_http_1.1.html">Understanding HTTP 1.1</a><br/>
+		</div>
+		<div class="section documentation-version">Version 1.0 Documentation</div>
+		<div class="section">
+			<a href="../../documentation/1.0/quick_start.html" class="quick-start">Quick-start</a><br/>
+		</div>
+		<div class="section">Core concepts</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/routes.html">Routes</a><br/>
+			<a href="../../documentation/1.0/route_collections.html">Route collections</a><br/>
+			<a href="../../documentation/1.0/restrictions.html">Restrictions</a><br/>
+			<a href="../../documentation/1.0/responses.html">Responses</a><br/>
+			<a href="../../documentation/1.0/caching.html">Caching</a><br/>
+			<a href="../../documentation/1.0/authentication_providers.html">Authentication providers</a><br/>
+			<a href="../../documentation/1.0/request_value_comparers.html">Request value comparers</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">URL resolvers</a>
+		</div>
+		<div class="section">Asset management</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/assets.html">Assets</a><br/>
+			<a href="../../documentation/1.0/bundles.html">Bundles</a><br/>
+			<a href="../../documentation/1.0/asset_concatenators.html">Asset Concatenators</a><br/>
+			<a href="../../documentation/1.0/asset_transformers.html">Asset Transformers</a><br/>
+			<a href="../../documentation/1.0/bundle_watchers.html">Bundle watchers</a><br/>
+			<a href="../../documentation/1.0/bundle_watcher_routes.html">Bundle watcher routes</a>
+		</div>
+		<div class="section">
+			<a href="../../documentation/1.0/diagnostics.html">Diagnostics</a>
+			<div class="section-links">
+				<a href="../../documentation/1.0/diagnosticroutehelper.html">DiagnosticRouteHelper</a><br/>
+				<a href="../../documentation/1.0/diagnostic_configurations.html">Diagnostic configurations</a>
+			</div>
+		</div>
+		<div class="section">ASP.net integration</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/juniorrouteapplication.html">JuniorRouteApplication</a><br/>
+			<a href="../../documentation/1.0/juniorrouteapplicationconfiguration.html">JuniorRouteApplicationConfiguration</a><br/>
+			<a href="../../documentation/1.0/aspnethttphandler.html">AspNetHttpHandler</a><br/>
+			<a href="../../documentation/1.0/response_generators.html">Response generators</a><br/>
+			<a href="../../documentation/1.0/response_handlers.html">Response handlers</a><br/>
+			<a href="../../documentation/1.0/file_systems.html">FileSystem</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">UrlResolver</a>
+		</div>
+		<a href="../../documentation/1.0/auto_routing.html">Auto-routing</a>
+		<div class="section-links">
+			<a href="../../documentation/1.0/autoroutecollection.html">AutoRouteCollection</a><br/>
+			<a href="../../documentation/1.0/containers.html">Containers</a><br/>
+			<a href="../../documentation/1.0/class_filters.html">Class filters</a><br/>
+			<a href="../../documentation/1.0/method_filters.html">Method filters</a><br/>
+			<a href="../../documentation/1.0/name_mappers.html">Name mappers</a><br/>
+			<a href="../../documentation/1.0/id_mappers.html">ID mappers</a><br/>
+			<a href="../../documentation/1.0/resolved_relative_url_mappers.html">Resolved relative URL mappers</a><br/>
+			<a href="../../documentation/1.0/restriction_mappers.html">Restriction mappers</a><br/>
+			<a href="../../documentation/1.0/parameter_mappers.html">Parameter mappers</a><br/>
+			<a href="../../documentation/1.0/model_property_mappers.html">Model property mappers</a><br/>
+			<a href="../../documentation/1.0/response_mappers.html">Response mappers</a><br/>
+			<a href="../../documentation/1.0/authentication_strategies.html">Authentication strategies</a><br/>
+			<a href="../../documentation/1.0/forms_authentication.html">Forms authentication</a><br/>
+			<a href="../../documentation/1.0/request_contexts.html">Request contexts</a>
+		</div>
+	</div>
+	<div class="document"><h1 id='autorouting__class_filters'>Auto-routing - Class Filters</h1>
+
+<p>Class filters control which classes are eligible for <a href='../../documentation/1.0/auto_routing.html'>auto-route</a> generation. Most Web projects contain classes that aren&#8217;t intended to be endpoints (e.g., <code>Global</code>). Class filters allows the developer to control which classes are endpoints and which aren&#8217;t.</p>
+
+<p><a href='../../documentation/1.0/autorouteconfiguration.html'><code>AutoRouteConfiguration</code></a> does not require any class filters, but it is recommended to provide at least one so that routes are not accidentally generated for non-endpoints classes.</p>
+
+<p>There are no base class, interface or attribute requirements for endpoints. There are two of general requirements, however. Endpoints:</p>
+
+<ul>
+<li>must not be abstract or static (i.e., they must be instantiatable)</li>
+
+<li>must be a reference type (i.e., a class)</li>
+</ul>
+
+<p>In the below example, a class filter is created that includes only classes whose names end with <em>Endpoint</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>NameEndsWithEndpointFilter</span> <span class='p'>:</span> <span class='n'>IClassFilter</span>
+<span class='p'>{</span>
+  <span class='k'>public</span> <span class='kt'>bool</span> <span class='nf'>Matches</span><span class='p'>(</span><span class='n'>Type</span> <span class='n'>type</span><span class='p'>)</span>
+  <span class='p'>{</span>
+    <span class='k'>return</span> <span class='n'>type</span><span class='p'>.</span><span class='n'>Name</span><span class='p'>.</span><span class='n'>EndsWith</span><span class='p'>(</span><span class='s'>&quot;Endpoint&quot;</span><span class='p'>);</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<p>JuniorRoute provides eight built-in implementations:</p>
+
+<ul>
+<li><code>DelegateFilter</code></li>
+
+<li><code>DerivesFilter</code></li>
+
+<li><code>HasNamespaceAncestorFilter</code></li>
+
+<li><code>ImplementsInterfaceFilter</code></li>
+
+<li><code>InNamespaceFilter</code></li>
+
+<li><code>NameEndsWithFilter</code></li>
+
+<li><code>NameMatchesRegexPatternFilter</code></li>
+
+<li><code>NameStartsWithFilter</code></li>
+</ul>
+
+<h2 id='delegatefilter'>DelegateFilter</h2>
+
+<p>This filter matches types based on the specified delegate.</p>
+
+<p>In the below example, a <code>DelegateFilter</code> is instantiated that matches types whose names end with <em>Endpoint</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>DelegateFilter</span><span class='p'>(</span><span class='n'>type</span> <span class='p'>=&gt;</span> <span class='n'>type</span><span class='p'>.</span><span class='n'>Name</span><span class='p'>.</span><span class='n'>EndsWith</span><span class='p'>(</span><span class='s'>&quot;Endpoint&quot;</span><span class='p'>));</span>
+</code></pre>
+</div>
+<h2 id='derivesfilter'>DerivesFilter</h2>
+
+<p>This filter matches types that derive the specified base type.</p>
+
+<p>In the below example, a <code>DerivesFilter</code> is instantiated that matches types whose base type is <code>Endpoint</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='n'>DerivesFilter</span><span class='p'>&lt;</span><span class='n'>Endpoint</span><span class='p'>&gt;();</span>
+</code></pre>
+</div>
+<h2 id='hasnamespaceancestorfilter'>HasNamespaceAncestorFilter</h2>
+
+<p>This filter matches types that have a namespace ancestor matching the specified namespace. A namespace ancestor is any parent namespace of the type&#8217;s namespace. For example, <code>MyApplication.MyModule.Endpoints</code> has the namespace ancestors <code>MyApplication</code> and <code>MyApplication.MyModule</code>.</p>
+
+<p>In the below example, a <code>HasNamespaceAncestorFilter</code> is instantiated that matches types with a namespace ancestor of <code>WebApp</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>HasNamespaceAncestorFilter</span><span class='p'>(</span><span class='s'>&quot;WebApp&quot;</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='implementsinterfacefilter'>ImplementsInterfaceFilter</h2>
+
+<p>This filter matches types that implement the specified interface.</p>
+
+<p>In the below example, a <code>ImplementsInterfaceFilter</code> is instantiated that matches types implementing <code>IEndpoint</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='n'>ImplementsInterfaceFilter</span><span class='p'>&lt;</span><span class='n'>IEndpoint</span><span class='p'>&gt;();</span>
+</code></pre>
+</div>
+<h2 id='innamespacefilter'>InNamespaceFilter</h2>
+
+<p>This filter matches types that are in the specified namespace.</p>
+
+<p>In the below example, a <code>InNamespaceFilter</code> is instantiated that matches types in the namespace <code>WebApp.Endpoints</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>InNamespaceFilter</span><span class='p'>(</span><span class='s'>&quot;WebApp.Endpoints&quot;</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='nameendswithfilter'>NameEndsWithFilter</h2>
+
+<p>This filter matches types whose names end with the specified value.</p>
+
+<p>In the below example, a <code>NameEndsWithFilter</code> is instantiated that matches types whose names end with <code>Endpoint</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>NameEndsWithFilter</span><span class='p'>(</span><span class='s'>&quot;Endpoint&quot;</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='namematchesregexpatternfilter'>NameMatchesRegexPatternFilter</h2>
+
+<p>This filter matches types whose names match the specified regular expression pattern.</p>
+
+<p>In the below example, a <code>NameMatchesRegexPatternFilter</code> is instantiated that matches types whose names match the regular expression <code>Endpoint</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>NameMatchesRegexPatternFilter</span><span class='p'>(</span><span class='s'>&quot;Endpoint&quot;</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='namestartswithfilter'>NameStartsWithFilter</h2>
+
+<p>This filter matches types whose names start with the specified value.</p>
+
+<p>In the below example, a <code>NameStartsWithFilter</code> is instantiated that matches types whose names start with <code>Endpoint</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>NameStartsWithFilter</span><span class='p'>(</span><span class='s'>&quot;Endpoint&quot;</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='extensibility'>Extensibility</h2>
+
+<p>Developers may create their own class filters by implementing the <code>IClassFilter</code> interface.</p></div>
+</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="../../js/plugins.js"></script>
+		<script>
+			var _gaq=[['_setAccount','UA-36144505-1'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+    </body>
+</html>

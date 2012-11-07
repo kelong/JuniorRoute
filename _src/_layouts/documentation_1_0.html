@@ -1,0 +1,71 @@
+---
+layout: default
+documentationversion: 1.0
+---
+<div class="documentation">
+	<div class="navigation">
+		<a href="{{ page.root }}index.html">Introduction</a>
+		<div class="section">
+			<a href="{{ page.root }}understanding_http_1.1.html">Understanding HTTP 1.1</a><br/>
+		</div>
+		<div class="section documentation-version">Version {% if page.documentationversion %}{{ page.documentationversion }}{% else %}{{ page.latestdocumentationversion }}{% endif %} Documentation</div>
+		<div class="section">
+			<a href="{{ page.documentationroot }}quick_start.html" class="quick-start">Quick-start</a><br/>
+		</div>
+		<div class="section">Core concepts</div>
+		<div class="section-links">
+			<a href="{{ page.documentationroot }}routes.html">Routes</a><br/>
+			<a href="{{ page.documentationroot }}route_collections.html">Route collections</a><br/>
+			<a href="{{ page.documentationroot }}restrictions.html">Restrictions</a><br/>
+			<a href="{{ page.documentationroot }}responses.html">Responses</a><br/>
+			<a href="{{ page.documentationroot }}caching.html">Caching</a><br/>
+			<a href="{{ page.documentationroot }}authentication_providers.html">Authentication providers</a><br/>
+			<a href="{{ page.documentationroot }}request_value_comparers.html">Request value comparers</a><br/>
+			<a href="{{ page.documentationroot }}url_resolvers.html">URL resolvers</a>
+		</div>
+		<div class="section">Asset management</div>
+		<div class="section-links">
+			<a href="{{ page.documentationroot }}assets.html">Assets</a><br/>
+			<a href="{{ page.documentationroot }}bundles.html">Bundles</a><br/>
+			<a href="{{ page.documentationroot }}asset_concatenators.html">Asset Concatenators</a><br/>
+			<a href="{{ page.documentationroot }}asset_transformers.html">Asset Transformers</a><br/>
+			<a href="{{ page.documentationroot }}bundle_watchers.html">Bundle watchers</a><br/>
+			<a href="{{ page.documentationroot }}bundle_watcher_routes.html">Bundle watcher routes</a>
+		</div>
+		<div class="section">
+			<a href="{{ page.documentationroot }}diagnostics.html">Diagnostics</a>
+			<div class="section-links">
+				<a href="{{ page.documentationroot }}diagnosticroutehelper.html">DiagnosticRouteHelper</a><br/>
+				<a href="{{ page.documentationroot }}diagnostic_configurations.html">Diagnostic configurations</a>
+			</div>
+		</div>
+		<div class="section">ASP.net integration</div>
+		<div class="section-links">
+			<a href="{{ page.documentationroot }}juniorrouteapplication.html">JuniorRouteApplication</a><br/>
+			<a href="{{ page.documentationroot }}juniorrouteapplicationconfiguration.html">JuniorRouteApplicationConfiguration</a><br/>
+			<a href="{{ page.documentationroot }}aspnethttphandler.html">AspNetHttpHandler</a><br/>
+			<a href="{{ page.documentationroot }}response_generators.html">Response generators</a><br/>
+			<a href="{{ page.documentationroot }}response_handlers.html">Response handlers</a><br/>
+			<a href="{{ page.documentationroot }}file_systems.html">FileSystem</a><br/>
+			<a href="{{ page.documentationroot }}url_resolvers.html">UrlResolver</a>
+		</div>
+		<a href="{{ page.documentationroot }}auto_routing.html">Auto-routing</a>
+		<div class="section-links">
+			<a href="{{ page.documentationroot }}autoroutecollection.html">AutoRouteCollection</a><br/>
+			<a href="{{ page.documentationroot }}containers.html">Containers</a><br/>
+			<a href="{{ page.documentationroot }}class_filters.html">Class filters</a><br/>
+			<a href="{{ page.documentationroot }}method_filters.html">Method filters</a><br/>
+			<a href="{{ page.documentationroot }}name_mappers.html">Name mappers</a><br/>
+			<a href="{{ page.documentationroot }}id_mappers.html">ID mappers</a><br/>
+			<a href="{{ page.documentationroot }}resolved_relative_url_mappers.html">Resolved relative URL mappers</a><br/>
+			<a href="{{ page.documentationroot }}restriction_mappers.html">Restriction mappers</a><br/>
+			<a href="{{ page.documentationroot }}parameter_mappers.html">Parameter mappers</a><br/>
+			<a href="{{ page.documentationroot }}model_property_mappers.html">Model property mappers</a><br/>
+			<a href="{{ page.documentationroot }}response_mappers.html">Response mappers</a><br/>
+			<a href="{{ page.documentationroot }}authentication_strategies.html">Authentication strategies</a><br/>
+			<a href="{{ page.documentationroot }}forms_authentication.html">Forms authentication</a><br/>
+			<a href="{{ page.documentationroot }}request_contexts.html">Request contexts</a>
+		</div>
+	</div>
+	<div class="document">{{ content }}</div>
+</div>

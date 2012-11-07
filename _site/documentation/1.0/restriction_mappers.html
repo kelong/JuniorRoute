@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Restriction Mappers - JuniorRoute</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="../../favicon.ico">
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/pygments.css">
+		<script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="header">
+	<h1>JuniorRoute</h1>
+	<h2>the easy-to-learn, easy-to-use routing framework for .NET</h2>
+</div>
+		<div class="header-links">
+	<div class="link-container-left menu" -data-menu="documentation-menu">
+		<a href="../../documentation/1.0/quick_start.html">Documentation</a>
+		<div class="menu-drop-down documentation-menu visuallyhidden">
+			<a href="../../documentation/1.0/quick_start.html">Version 1.0</a>
+		</div>
+	</div>
+	<div class="link-container-left menu" -data-menu="resources-menu">
+		<span class="dummy">Resources</span>
+		<div class="menu-drop-down resources-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorRoute" target="_blank">Respository</a><br/>
+			<a href="https://github.com/NathanAlden/JuniorRoute/wiki" target="_blank">Wiki</a>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="link-container-right menu" -data-menu="other-projects-menu">
+		<a href="https://github.com/NathanAlden" target="_blank">Other Projects by Nathan Alden, Sr.</a>
+		<div class="menu-drop-down other-projects-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorPersist">JuniorPersist</a></br>
+			<a href="https://github.com/NathanAlden/JuniorMap">JuniorMap</a></br>
+			<a href="https://github.com/NathanAlden/FirefoxAutoRefresh">Firefox Auto Refresh</a></br>
+			<a href="https://github.com/NathanAlden" class="and-more">...and more!</a>
+		</div>
+	</div>
+</div>
+		<div class="documentation">
+	<div class="navigation">
+		<a href="../../index.html">Introduction</a>
+		<div class="section">
+			<a href="../../understanding_http_1.1.html">Understanding HTTP 1.1</a><br/>
+		</div>
+		<div class="section documentation-version">Version 1.0 Documentation</div>
+		<div class="section">
+			<a href="../../documentation/1.0/quick_start.html" class="quick-start">Quick-start</a><br/>
+		</div>
+		<div class="section">Core concepts</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/routes.html">Routes</a><br/>
+			<a href="../../documentation/1.0/route_collections.html">Route collections</a><br/>
+			<a href="../../documentation/1.0/restrictions.html">Restrictions</a><br/>
+			<a href="../../documentation/1.0/responses.html">Responses</a><br/>
+			<a href="../../documentation/1.0/caching.html">Caching</a><br/>
+			<a href="../../documentation/1.0/authentication_providers.html">Authentication providers</a><br/>
+			<a href="../../documentation/1.0/request_value_comparers.html">Request value comparers</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">URL resolvers</a>
+		</div>
+		<div class="section">Asset management</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/assets.html">Assets</a><br/>
+			<a href="../../documentation/1.0/bundles.html">Bundles</a><br/>
+			<a href="../../documentation/1.0/asset_concatenators.html">Asset Concatenators</a><br/>
+			<a href="../../documentation/1.0/asset_transformers.html">Asset Transformers</a><br/>
+			<a href="../../documentation/1.0/bundle_watchers.html">Bundle watchers</a><br/>
+			<a href="../../documentation/1.0/bundle_watcher_routes.html">Bundle watcher routes</a>
+		</div>
+		<div class="section">
+			<a href="../../documentation/1.0/diagnostics.html">Diagnostics</a>
+			<div class="section-links">
+				<a href="../../documentation/1.0/diagnosticroutehelper.html">DiagnosticRouteHelper</a><br/>
+				<a href="../../documentation/1.0/diagnostic_configurations.html">Diagnostic configurations</a>
+			</div>
+		</div>
+		<div class="section">ASP.net integration</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/juniorrouteapplication.html">JuniorRouteApplication</a><br/>
+			<a href="../../documentation/1.0/juniorrouteapplicationconfiguration.html">JuniorRouteApplicationConfiguration</a><br/>
+			<a href="../../documentation/1.0/aspnethttphandler.html">AspNetHttpHandler</a><br/>
+			<a href="../../documentation/1.0/response_generators.html">Response generators</a><br/>
+			<a href="../../documentation/1.0/response_handlers.html">Response handlers</a><br/>
+			<a href="../../documentation/1.0/file_systems.html">FileSystem</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">UrlResolver</a>
+		</div>
+		<a href="../../documentation/1.0/auto_routing.html">Auto-routing</a>
+		<div class="section-links">
+			<a href="../../documentation/1.0/autoroutecollection.html">AutoRouteCollection</a><br/>
+			<a href="../../documentation/1.0/containers.html">Containers</a><br/>
+			<a href="../../documentation/1.0/class_filters.html">Class filters</a><br/>
+			<a href="../../documentation/1.0/method_filters.html">Method filters</a><br/>
+			<a href="../../documentation/1.0/name_mappers.html">Name mappers</a><br/>
+			<a href="../../documentation/1.0/id_mappers.html">ID mappers</a><br/>
+			<a href="../../documentation/1.0/resolved_relative_url_mappers.html">Resolved relative URL mappers</a><br/>
+			<a href="../../documentation/1.0/restriction_mappers.html">Restriction mappers</a><br/>
+			<a href="../../documentation/1.0/parameter_mappers.html">Parameter mappers</a><br/>
+			<a href="../../documentation/1.0/model_property_mappers.html">Model property mappers</a><br/>
+			<a href="../../documentation/1.0/response_mappers.html">Response mappers</a><br/>
+			<a href="../../documentation/1.0/authentication_strategies.html">Authentication strategies</a><br/>
+			<a href="../../documentation/1.0/forms_authentication.html">Forms authentication</a><br/>
+			<a href="../../documentation/1.0/request_contexts.html">Request contexts</a>
+		</div>
+	</div>
+	<div class="document"><h1 id='autorouting__restriction_mappers'>Auto-routing - Restriction Mappers</h1>
+
+<p>Restriction mappers generate <a href='../../documentation/1.0/restrictions.html'>restrictions</a> for <a href='../../documentation/1.0/routes.html'>routes</a> during <a href='../../documentation/1.0/autoroutecollection.html'><code>AutoRouteCollection</code></a> route generation. <code>AutoRouteCollection</code> does not require any restrictions to be provided. However, in most cases developers should supply at least a <code>MethodRestriction</code> and a <code>UrlRelativePathRestriction</code>.</p>
+
+<p>JuniorRoute provides four built-in implementations:</p>
+
+<ul>
+<li><code>HttpMethodFromMethodsNamedAfterStandardHttpMethodsMapper</code></li>
+
+<li><code>UrlRelativePathFromRelativeClassNamespaceAndClassNameMapper</code></li>
+
+<li><code>RestrictionsFromAttributesMapper</code></li>
+
+<li><code>RestrictionsFromAttributesMapper&lt;T&gt;</code></li>
+</ul>
+
+<h2 id='httpmethodfrommethodsnamedafterstandardhttpmethodsmapper'>HttpMethodFromMethodsNamedAfterStandardHttpMethodsMapper</h2>
+
+<p>This mapper adds a <code>MethodRestriction</code> to a route, but only if the method name is a standard HTTP method (GET, HEAD, POST, PUT, DELETE, TRACE or CONNECT). The method name comparison is case-insensitive.</p>
+
+<p>In the below example, a <code>HttpMethodFromMethodsNamedAfterStandardHttpMethodsMapper</code> is instantiated.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>HttpMethodFromMethodsNamedAfterStandardHttpMethodsMapper</span><span class='p'>();</span>
+</code></pre>
+</div>
+<h2 id='urlrelativepathfromrelativeclassnamespaceandclassnamemapper'>UrlRelativePathFromRelativeClassNamespaceAndClassNameMapper</h2>
+
+<p>This mapper adds a <code>UrlRelativePathRestriction</code> to a route using the endpoint&#8217;s relative namespace and class name. The way in which these two parts are concatenated to form the path is configurable. The class takes five constructor parameters:</p>
+
+<ul>
+<li><em>rootNamespace</em></li>
+
+<li><em>caseSensitive</em></li>
+
+<li><em>makeLowercase</em></li>
+
+<li><em>wordSeparator</em></li>
+
+<li><em>wordRegexPattern</em></li>
+</ul>
+
+<h3 id='rootnamespace'>rootNamespace</h3>
+
+<p>This parameter determines the part of the class&#8217; namespace that is trimmed during processing. For example, if an endpoint&#8217;s namespace is <em>WebApp.Endpoints</em> and <code>rootNamespace</code> is <em>WebApp</em>, then only <em>Endpoints</em> is used in the path.</p>
+
+<h3 id='casesensitive'>caseSensitive</h3>
+
+<p>This parameter determines whether the restriction is case-sensitive.</p>
+
+<h3 id='makelowercase'>makeLowercase</h3>
+
+<p>This parameter determines whether the entire path is lowercased when generated.</p>
+
+<h3 id='wordseparator'>wordSeparator</h3>
+
+<p>A word separator may be used to separate words in the generated path. For example, a <code>wordSeparator</code> of <code>_</code> with a relative namespace of <code>Help</code> , lowercase generation and a class name of <code>DocumentationIndex</code> produces the path <em>help/documentation_index</em>.</p>
+
+<h3 id='wordregexpattern'>wordRegexPattern</h3>
+
+<p>The regular expression pattern used to split words from namespaces and class names may be changed to suit a developer&#8217;s preference. The default pattern is <code>\.|_|(?:(?&lt;=[a-z])(?=[A-Z\d]))|(?:(?&lt;=\d)(?=[A-Z]))|(?:(?&lt;=[A-Z])(?=[A-Z][a-z]))</code>.</p>
+
+<p>In the below example, a <code>UrlRelativePathFromRelativeClassNamespaceAndClassNameMapper</code> instance is configured to restrict paths to words separated by underscores.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='nf'>UrlRelativePathFromRelativeClassNamespaceAndClassNameMapper</span><span class='p'>(</span><span class='s'>&quot;WebApp.Endpoints&quot;</span><span class='p'>);</span>
+</code></pre>
+</div>
+<h2 id='restrictionsfromattributesmapper_and_restrictionsfromattributesmappert'>RestrictionsFromAttributesMapper and RestrictionsFromAttributesMapper&#60;T&#62;</h2>
+
+<p>These mappers check endpoint methods for attributes of a specific type that derives <code>RestrictionAttribute</code>. If any are found, the attributes map the appopriate restrictions to the route.</p>
+
+<p>In the below example, a <code>RestrictionsFromAttributesMapper</code> instance is configured to restrict by <code>CookieAttribute</code>s.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>new</span> <span class='n'>RestrictionsFromAttributesMapper</span><span class='p'>&lt;</span><span class='n'>CookieAttribute</span><span class='p'>&gt;();</span>
+</code></pre>
+</div>
+<p>JuniorRoute provides 22 built-in implementations of <code>RestrictionAttribute</code>:</p>
+
+<ul>
+<li><code>CookieAttribute</code></li>
+
+<li><code>HeaderAttribute</code></li>
+
+<li><code>MethodAttribute</code></li>
+
+<li><code>RefererUrlAbsolutePathAttribute</code></li>
+
+<li><code>RefererUrlAuthorityAttribute</code></li>
+
+<li><code>RefererUrlFragmentAttribute</code></li>
+
+<li><code>RefererUrlHostAttribute</code></li>
+
+<li><code>RefererUrlHostTypeAttribute</code></li>
+
+<li><code>RefererUrlPathAndQueryAttribute</code></li>
+
+<li><code>RefererUrlPortAttribute</code></li>
+
+<li><code>RefererUrlQueryAttribute</code></li>
+
+<li><code>RefererUrlQueryStringAttribute</code></li>
+
+<li><code>RefererUrlSchemeAttribute</code></li>
+
+<li><code>UrlAuthorityAttribute</code></li>
+
+<li><code>UrlFragmentAttribute</code></li>
+
+<li><code>UrlHostAttribute</code></li>
+
+<li><code>UrlHostTypeAttribute</code></li>
+
+<li><code>UrlPortAttribute</code></li>
+
+<li><code>UrlQueryAttribute</code></li>
+
+<li><code>UrlQueryStringAttribute</code></li>
+
+<li><code>UrlRelativePathAttribute</code></li>
+
+<li><code>UrlSchemeAttribute</code></li>
+</ul>
+
+<h2 id='cookieattribute'>CookieAttribute</h2>
+
+<p>This attribute adds a <code>CookieRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[Cookie]</code> attribute is configured to restrict a route by the presence of a cookie in the HTTP request message.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [Cookie(&quot;api-key&quot;, &quot;71910b0b-405d-47a4-8d8e-eb92ee6bdfa2&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='headerattribute'>HeaderAttribute</h2>
+
+<p>This attribute adds a <code>HeaderRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[Header]</code> attribute is configured to restrict a route by the presence of a header in the HTTP request message.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [Header(&quot;api-key&quot;, &quot;71910b0b-405d-47a4-8d8e-eb92ee6bdfa2&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='methodattribute'>MethodAttribute</h2>
+
+<p>This attribute adds a <code>MethodRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[Method]</code> attribute is configured to restrict a route to only GET requests.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [Method(HttpMethod.Get)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlabsolutepathattribute'>RefererUrlAbsolutePathAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlAbsolutePathRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlAbsolutePath]</code> attribute is configured to restrict a route to only referer URLs with an absolute path of <em>/path</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlAbsolutePath(&quot;/path&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlauthorityattribute'>RefererUrlAuthorityAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlAuthorityRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlAuthority]</code> attribute is configured to restrict a route to only referer URLs with an authority of <em>www.google.com:80</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlAuthority(&quot;www.google.com:80&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlfragmentattribute'>RefererUrlFragmentAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlFragmentRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlFragment]</code> attribute is configured to restrict a route to only referer URLs with a fragment of <em>#fragment</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlFragment(&quot;#fragment&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlhostattribute'>RefererUrlHostAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlHostRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlHost]</code> attribute is configured to restrict a route to only referer URLs with a host of <em>www.google.com</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlHost(&quot;www.google.com&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlhosttypeattribute'>RefererUrlHostTypeAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlHostTypeRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlHostType]</code> attribute is configured to restrict a route to only referer URLs with a host type of <code>UriHostNameType.IPv4</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlHostType(UriHostNameType.IPv4)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlpathandqueryattribute'>RefererUrlPathAndQueryAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlPathAndQueryRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlPathAndQuery]</code> attribute is configured to restrict a route to only referer URLs with a path and query of <em>path?id=1</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlPathAndQuery(&quot;path?id=1&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlportattribute'>RefererUrlPortAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlPortRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlPort]</code> attribute is configured to restrict a route to only referer URLs with a port of <em>8080</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlPort(8080)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlqueryattribute'>RefererUrlQueryAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlQueryRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlQuery]</code> attribute is configured to restrict a route to only referer URLs with a query of <em>?firstname=joe&amp;lastname=public</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlQuery(&quot;?firstname=joe&amp;lastname=public&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlquerystringattribute'>RefererUrlQueryStringAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlQueryStringRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlQueryString]</code> attribute is configured to restrict a route to only referer URLs with a query string field of <em>id</em> and a value of <em>1</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlQueryString(&quot;id&quot;, &quot;1&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='refererurlschemeattribute'>RefererUrlSchemeAttribute</h2>
+
+<p>This attribute adds a <code>RefererUrlSchemeRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[RefererUrlScheme]</code> attribute is configured to restrict a route to only referer URLs with a scheme of <em>https</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [RefererUrlScheme(&quot;https&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlauthorityattribute'>UrlAuthorityAttribute</h2>
+
+<p>This attribute adds a <code>UrlAuthorityRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlAuthority]</code> attribute is configured to restrict a route to only request URLs with an authority of <em>www.google.com:80</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlAuthority(&quot;www.google.com:80&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlfragmentattribute'>UrlFragmentAttribute</h2>
+
+<p>This attribute adds a <code>UrlFragmentRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlFragment]</code> attribute is configured to restrict a route to only request URLs with a fragment of <em>#fragment</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlFragment(&quot;#fragment&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlhostattribute'>UrlHostAttribute</h2>
+
+<p>This attribute adds a <code>UrlHostRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlHost]</code> attribute is configured to restrict a route to only request URLs with a host of <em>www.google.com</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlHost(&quot;www.google.com&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlhosttypeattribute'>UrlHostTypeAttribute</h2>
+
+<p>This attribute adds a <code>UrlHostTypeRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlHostType]</code> attribute is configured to restrict a route to only request URLs with a host type of <code>UriHostNameType.IPv4</code>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlHostType(UriHostNameType.IPv4)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlportattribute'>UrlPortAttribute</h2>
+
+<p>This attribute adds a <code>UrlPortRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlPort]</code> attribute is configured to restrict a route to only request URLs with a port of <em>8080</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlPort(8080)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlqueryattribute'>UrlQueryAttribute</h2>
+
+<p>This attribute adds a <code>UrlQueryRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlQuery]</code> attribute is configured to restrict a route to only request URLs with a query of <em>?firstname=joe&amp;lastname=public</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlQuery(&quot;?firstname=joe&amp;lastname=public&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlquerystringattribute'>UrlQueryStringAttribute</h2>
+
+<p>This attribute adds a <code>UrlQueryStringRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlQueryString]</code> attribute is configured to restrict a route to only request URLs with a query string field of <em>id</em> and a value of <em>1</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlQueryString(&quot;id&quot;, &quot;1&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlrelativepathattribute'>UrlRelativePathAttribute</h2>
+
+<p>This attribute adds a <code>UrlRelativePathRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlRelativePath]</code> attribute is configured to restrict a route to only request URLs with a relative path of <em>person</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlRelativePath(&quot;person&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='urlschemeattribute'>UrlSchemeAttribute</h2>
+
+<p>This attribute adds a <code>UrlSchemeRestriction</code> to a route.</p>
+
+<p>In the below example, a <code>[UrlScheme]</code> attribute is configured to restrict a route to only request URLs with a scheme of <em>https</em>.</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Person</span>
+<span class='p'>{</span>
+<span class='na'>  [UrlScheme(&quot;https&quot;)]</span>
+  <span class='k'>public</span> <span class='k'>void</span> <span class='nf'>Post</span><span class='p'>()</span>
+  <span class='p'>{</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='extensibility'>Extensibility</h2>
+
+<p>Developers may create their own restriction mappers by implementing the <code>IRestrictionMapper</code> interface.</p></div>
+</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="../../js/plugins.js"></script>
+		<script>
+			var _gaq=[['_setAccount','UA-36144505-1'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+    </body>
+</html>

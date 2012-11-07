@@ -1,0 +1,3 @@
+source: ./_src
+destination: ./_site
+pygments: true

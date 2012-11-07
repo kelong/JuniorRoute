@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Quick Start - JuniorRoute</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="../../favicon.ico">
+		<link rel="stylesheet" href="../../css/normalize.css">
+		<link rel="stylesheet" href="../../css/main.css">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/pygments.css">
+		<script src="../../js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="header">
+	<h1>JuniorRoute</h1>
+	<h2>the easy-to-learn, easy-to-use routing framework for .NET</h2>
+</div>
+		<div class="header-links">
+	<div class="link-container-left menu" -data-menu="documentation-menu">
+		<a href="../../documentation/1.0/quick_start.html">Documentation</a>
+		<div class="menu-drop-down documentation-menu visuallyhidden">
+			<a href="../../documentation/1.0/quick_start.html">Version 1.0</a>
+		</div>
+	</div>
+	<div class="link-container-left menu" -data-menu="resources-menu">
+		<span class="dummy">Resources</span>
+		<div class="menu-drop-down resources-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorRoute" target="_blank">Respository</a><br/>
+			<a href="https://github.com/NathanAlden/JuniorRoute/wiki" target="_blank">Wiki</a>
+		</div>
+	</div>
+	<div class="spacer"></div>
+	<div class="link-container-right menu" -data-menu="other-projects-menu">
+		<a href="https://github.com/NathanAlden" target="_blank">Other Projects by Nathan Alden, Sr.</a>
+		<div class="menu-drop-down other-projects-menu visuallyhidden">
+			<a href="https://github.com/NathanAlden/JuniorPersist">JuniorPersist</a></br>
+			<a href="https://github.com/NathanAlden/JuniorMap">JuniorMap</a></br>
+			<a href="https://github.com/NathanAlden/FirefoxAutoRefresh">Firefox Auto Refresh</a></br>
+			<a href="https://github.com/NathanAlden" class="and-more">...and more!</a>
+		</div>
+	</div>
+</div>
+		<div class="documentation">
+	<div class="navigation">
+		<a href="../../index.html">Introduction</a>
+		<div class="section">
+			<a href="../../understanding_http_1.1.html">Understanding HTTP 1.1</a><br/>
+		</div>
+		<div class="section documentation-version">Version 1.0 Documentation</div>
+		<div class="section">
+			<a href="../../documentation/1.0/quick_start.html" class="quick-start">Quick-start</a><br/>
+		</div>
+		<div class="section">Core concepts</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/routes.html">Routes</a><br/>
+			<a href="../../documentation/1.0/route_collections.html">Route collections</a><br/>
+			<a href="../../documentation/1.0/restrictions.html">Restrictions</a><br/>
+			<a href="../../documentation/1.0/responses.html">Responses</a><br/>
+			<a href="../../documentation/1.0/caching.html">Caching</a><br/>
+			<a href="../../documentation/1.0/authentication_providers.html">Authentication providers</a><br/>
+			<a href="../../documentation/1.0/request_value_comparers.html">Request value comparers</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">URL resolvers</a>
+		</div>
+		<div class="section">Asset management</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/assets.html">Assets</a><br/>
+			<a href="../../documentation/1.0/bundles.html">Bundles</a><br/>
+			<a href="../../documentation/1.0/asset_concatenators.html">Asset Concatenators</a><br/>
+			<a href="../../documentation/1.0/asset_transformers.html">Asset Transformers</a><br/>
+			<a href="../../documentation/1.0/bundle_watchers.html">Bundle watchers</a><br/>
+			<a href="../../documentation/1.0/bundle_watcher_routes.html">Bundle watcher routes</a>
+		</div>
+		<div class="section">
+			<a href="../../documentation/1.0/diagnostics.html">Diagnostics</a>
+			<div class="section-links">
+				<a href="../../documentation/1.0/diagnosticroutehelper.html">DiagnosticRouteHelper</a><br/>
+				<a href="../../documentation/1.0/diagnostic_configurations.html">Diagnostic configurations</a>
+			</div>
+		</div>
+		<div class="section">ASP.net integration</div>
+		<div class="section-links">
+			<a href="../../documentation/1.0/juniorrouteapplication.html">JuniorRouteApplication</a><br/>
+			<a href="../../documentation/1.0/juniorrouteapplicationconfiguration.html">JuniorRouteApplicationConfiguration</a><br/>
+			<a href="../../documentation/1.0/aspnethttphandler.html">AspNetHttpHandler</a><br/>
+			<a href="../../documentation/1.0/response_generators.html">Response generators</a><br/>
+			<a href="../../documentation/1.0/response_handlers.html">Response handlers</a><br/>
+			<a href="../../documentation/1.0/file_systems.html">FileSystem</a><br/>
+			<a href="../../documentation/1.0/url_resolvers.html">UrlResolver</a>
+		</div>
+		<a href="../../documentation/1.0/auto_routing.html">Auto-routing</a>
+		<div class="section-links">
+			<a href="../../documentation/1.0/autoroutecollection.html">AutoRouteCollection</a><br/>
+			<a href="../../documentation/1.0/containers.html">Containers</a><br/>
+			<a href="../../documentation/1.0/class_filters.html">Class filters</a><br/>
+			<a href="../../documentation/1.0/method_filters.html">Method filters</a><br/>
+			<a href="../../documentation/1.0/name_mappers.html">Name mappers</a><br/>
+			<a href="../../documentation/1.0/id_mappers.html">ID mappers</a><br/>
+			<a href="../../documentation/1.0/resolved_relative_url_mappers.html">Resolved relative URL mappers</a><br/>
+			<a href="../../documentation/1.0/restriction_mappers.html">Restriction mappers</a><br/>
+			<a href="../../documentation/1.0/parameter_mappers.html">Parameter mappers</a><br/>
+			<a href="../../documentation/1.0/model_property_mappers.html">Model property mappers</a><br/>
+			<a href="../../documentation/1.0/response_mappers.html">Response mappers</a><br/>
+			<a href="../../documentation/1.0/authentication_strategies.html">Authentication strategies</a><br/>
+			<a href="../../documentation/1.0/forms_authentication.html">Forms authentication</a><br/>
+			<a href="../../documentation/1.0/request_contexts.html">Request contexts</a>
+		</div>
+	</div>
+	<div class="document"><h1 id='quick_start'>Quick Start</h1>
+
+<p>Getting started with JuniorRoute is very easy. This page shows you the few simple steps required to get JuniorRoute integrated with an ASP.net Web application. <em>Note that this tutorial was written using Visual Studio 2012 with C#, so some steps may vary depending on your Visual Studio version and language selection.</em></p>
+
+<h2 id='step_1__create_a_new_aspnet_empty_web_application_solution'>Step 1 - Create a New ASP.NET Empty Web Application Solution</h2>
+
+<p>Create a new ASP.NET empty Web application solution. Be sure to target at least .NET Framework 4.</p>
+
+<p><img alt='Create a new ASP.NET empty Web application' src='../../documentation/1.0/images/new-aspnet-empty-web-application.png' /></p>
+
+<h2 id='step_2__remove_all_references_from_the_new_project'>Step 2 - Remove All References From the New Project</h2>
+
+<p>Remove all the references Visual Studio has added. Your project won&#8217;t need most of them.</p>
+
+<p><img alt='Remove references' src='../../documentation/1.0/images/remove-references.png' /></p>
+
+<h2 id='step_3__add_nuget_packages'>Step 3 - Add NuGet Packages</h2>
+
+<p>This tutorial uses all JuniorRoute NuGet packages. JuniorRoute packages can be found in the Manage NuGet Packages dialog by searching for <em>JuniorRoute</em>.</p>
+
+<p>Add all JuniorRoute packages to your project.</p>
+
+<p><img alt='Add NuGet packages' src='../../documentation/1.0/images/add-nuget-packages.png' /></p>
+
+<p><img alt='Updated references' src='../../documentation/1.0/images/updated-references.png' /></p>
+
+<h2 id='step_4__add_a_new_global_application_class'>Step 4 - Add a New Global Application Class</h2>
+
+<p>JuniorRoute attaches to the ASP.net pipeline from within the global application class&#8217; constructor.</p>
+
+<p>Add a new global application class called <code>Global</code> and change its code to the following:</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>using</span> <span class='nn'>System.Web</span><span class='p'>;</span>
+
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration</span><span class='p'>;</span>
+
+<span class='k'>namespace</span> <span class='nn'>JuniorApplication</span>
+<span class='p'>{</span>
+  <span class='k'>public</span> <span class='k'>class</span> <span class='nc'>Global</span> <span class='p'>:</span> <span class='n'>HttpApplication</span>
+  <span class='p'>{</span>
+    <span class='k'>public</span> <span class='nf'>Global</span><span class='p'>()</span>
+    <span class='p'>{</span>
+      <span class='n'>JuniorRouteApplication</span><span class='p'>.</span><span class='n'>AttachToHttpApplication</span><span class='p'>(</span><span class='k'>this</span><span class='p'>);</span>
+    <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='step_5__add_a_configuration_class'>Step 5 - Add a Configuration Class</h2>
+
+<p>Add a new class called <code>JuniorRouteConfiguration</code> and change its code to the following:</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration</span><span class='p'>;</span>
+
+<span class='k'>namespace</span> <span class='nn'>JuniorApplication</span>
+<span class='p'>{</span>
+  <span class='k'>public</span> <span class='k'>class</span> <span class='nc'>JuniorRouteConfiguration</span> <span class='p'>:</span> <span class='n'>JuniorRouteApplicationConfiguration</span>
+  <span class='p'>{</span>
+    <span class='k'>public</span> <span class='nf'>JuniorRouteConfiguration</span><span class='p'>()</span>
+    <span class='p'>{</span>
+    <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='step_6__add_a_preapplication_start_method'>Step 6 - Add a Pre-application Start Method</h2>
+
+<p>JuniorRoute configuration must be registered before the ASP.net pipeline creates any global application class instances. This prevents configuration from being created over and over. To accomplish this, we&#8217;ll use ASP.net&#8217;s <em>pre-application start method</em> mechanism.</p>
+
+<p>Add a new class called <code>JuniorRoute</code> to your project and change its code to the following:</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration</span><span class='p'>;</span>
+
+<span class='k'>namespace</span> <span class='nn'>JuniorApplication</span>
+<span class='p'>{</span>
+  <span class='k'>public</span> <span class='k'>static</span> <span class='k'>class</span> <span class='nc'>JuniorRoute</span>
+  <span class='p'>{</span>
+    <span class='k'>public</span> <span class='k'>static</span> <span class='k'>void</span> <span class='nf'>Start</span><span class='p'>()</span>
+    <span class='p'>{</span>
+      <span class='n'>JuniorRouteApplication</span><span class='p'>.</span><span class='n'>RegisterConfiguration</span><span class='p'>&lt;</span><span class='n'>JuniorRouteConfiguration</span><span class='p'>&gt;();</span>
+    <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='step_7__add_the_preapplicationstartmethod_attribute_to_assemblyinfocs'>Step 7 - Add the PreApplicationStartMethod Attribute to AssemblyInfo.cs</h2>
+
+<p>Adding the <code>[assembly:PreApplicationStartMethod]</code> attribute instructs ASP.net to call the <code>Start</code> method before creating any global application class instances.</p>
+
+<p>Replace the contents of AssemblyInfo.cs with the following code:</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>using</span> <span class='nn'>System.Reflection</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>System.Web</span><span class='p'>;</span>
+
+<span class='k'>using</span> <span class='nn'>JuniorApplication</span><span class='p'>;</span>
+
+<span class='na'>[assembly:AssemblyTitle(&quot;JuniorApplication&quot;)]</span>
+<span class='na'>[assembly:PreApplicationStartMethod(typeof(JuniorRoute), &quot;Start&quot;)]</span>
+</code></pre>
+</div>
+<h2 id='step_8__configure_autorouting'>Step 8 - Configure Auto-routing</h2>
+
+<p>Now that bootstrapping is taken care of, it&#8217;s time to configure auto-routing. Auto-routing will automatically generate routes given a set of conventions.</p>
+
+<p>Open the <code>JuniorRouteConfiguration</code> class and change its code to the following:</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>using</span> <span class='nn'>System.Reflection</span><span class='p'>;</span>
+
+<span class='k'>using</span> <span class='nn'>Junior.Common</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration.AspNet</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration.ResponseGenerators</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration.ResponseHandlers</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AutoRouting</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AutoRouting.Containers</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AutoRouting.ParameterMappers</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.Routing</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.Routing.Caching</span><span class='p'>;</span>
+
+<span class='k'>namespace</span> <span class='nn'>JuniorApplication</span>
+<span class='p'>{</span>
+  <span class='k'>public</span> <span class='k'>class</span> <span class='nc'>JuniorRouteConfiguration</span> <span class='p'>:</span> <span class='n'>JuniorRouteApplicationConfiguration</span>
+  <span class='p'>{</span>
+    <span class='k'>public</span> <span class='nf'>JuniorRouteConfiguration</span><span class='p'>()</span>
+    <span class='p'>{</span>
+      <span class='c1'>// Declare the root endpoint namespace</span>
+      <span class='k'>const</span> <span class='kt'>string</span> <span class='n'>endpointNamespace</span> <span class='p'>=</span> <span class='s'>&quot;JuniorApplication.Endpoints&quot;</span><span class='p'>;</span>
+
+      <span class='c1'>// Create dependencies</span>
+      <span class='kt'>var</span> <span class='n'>guidFactory</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>GuidFactory</span><span class='p'>();</span>
+      <span class='kt'>var</span> <span class='n'>httpRuntime</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>HttpRuntimeWrapper</span><span class='p'>();</span>
+      <span class='kt'>var</span> <span class='n'>restrictionContainer</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>DefaultRestrictionContainer</span><span class='p'>(</span><span class='n'>httpRuntime</span><span class='p'>);</span>
+      <span class='kt'>var</span> <span class='n'>responseGenerators</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>IResponseGenerator</span><span class='p'>[]</span>
+        <span class='p'>{</span>
+          <span class='k'>new</span> <span class='nf'>MostMatchingRestrictionsGenerator</span><span class='p'>(),</span>
+          <span class='k'>new</span> <span class='nf'>UnmatchedRestrictionsGenerator</span><span class='p'>(),</span>
+          <span class='k'>new</span> <span class='nf'>NotFoundGenerator</span><span class='p'>()</span>
+        <span class='p'>};</span>
+      <span class='kt'>var</span> <span class='n'>responseHandlers</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>IResponseHandler</span><span class='p'>[]</span> <span class='p'>{</span> <span class='k'>new</span> <span class='n'>NonCacheableResponseHandler</span><span class='p'>()</span> <span class='p'>};</span>
+      <span class='kt'>var</span> <span class='n'>parameterMappers</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>IParameterMapper</span><span class='p'>[]</span> <span class='p'>{</span> <span class='k'>new</span> <span class='n'>DefaultValueMapper</span><span class='p'>()</span> <span class='p'>};</span>
+	  <span class='kt'>var</span> <span class='n'>cache</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>NoCache</span><span class='p'>();</span>
+
+      <span class='c1'>// Provide conventions to a new AutoRouteCollection instance</span>
+      <span class='n'>AutoRouteCollection</span> <span class='n'>autoRouteCollection</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>AutoRouteCollection</span><span class='p'>()</span>
+        <span class='p'>.</span><span class='n'>RestrictionContainer</span><span class='p'>(</span><span class='n'>restrictionContainer</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>Assemblies</span><span class='p'>(</span><span class='n'>Assembly</span><span class='p'>.</span><span class='n'>GetExecutingAssembly</span><span class='p'>())</span>
+        <span class='p'>.</span><span class='n'>NameAfterRelativeClassNamespaceAndClassName</span><span class='p'>(</span><span class='n'>endpointNamespace</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>IdRandomly</span><span class='p'>(</span><span class='n'>guidFactory</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>ResolvedRelativeUrlFromRelativeClassNamespacesAndClassNames</span><span class='p'>(</span><span class='n'>endpointNamespace</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>RestrictHttpMethodsToMethodsNamedAfterStandardHttpMethods</span><span class='p'>()</span>
+        <span class='p'>.</span><span class='n'>RestrictRelativeUrlsToRelativeClassNamespacesAndClassNames</span><span class='p'>(</span><span class='n'>endpointNamespace</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>RespondWithMethodReturnValuesThatImplementIResponse</span><span class='p'>(</span><span class='n'>parameterMappers</span><span class='p'>);</span>
+
+      <span class='c1'>// Generate routes</span>
+      <span class='n'>IRouteCollection</span> <span class='n'>routeCollection</span> <span class='p'>=</span> <span class='n'>autoRouteCollection</span><span class='p'>.</span><span class='n'>GenerateRouteCollection</span><span class='p'>();</span>
+
+      <span class='c1'>// Create an HTTP handler</span>
+      <span class='kt'>var</span> <span class='n'>httpHandler</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>AspNetHttpHandler</span><span class='p'>(</span><span class='n'>routeCollection</span><span class='p'>,</span> <span class='n'>cache</span><span class='p'>,</span> <span class='n'>responseGenerators</span><span class='p'>,</span> <span class='n'>responseHandlers</span><span class='p'>);</span>
+
+      <span class='c1'>// Set the handler in the base class</span>
+      <span class='n'>SetHandler</span><span class='p'>(</span><span class='n'>httpHandler</span><span class='p'>);</span>
+    <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='step_9__add_an_endpoint_class'>Step 9 - Add an Endpoint Class</h2>
+
+<p>We&#8217;re almost finished! Add a new folder to the project called Endpoints. Notice that the namespace for the folder matches the endpoint namespace specified in your configuration.</p>
+
+<p>Then, add a new class called <code>HelloWorld</code> to the Endpoints folder and change its code to the following:</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>using</span> <span class='nn'>Junior.Route.Routing.Responses.Text</span><span class='p'>;</span>
+
+<span class='k'>namespace</span> <span class='nn'>JuniorApplication.Endpoints</span>
+<span class='p'>{</span>
+  <span class='k'>public</span> <span class='k'>class</span> <span class='nc'>HelloWorld</span>
+  <span class='p'>{</span>
+    <span class='k'>public</span> <span class='n'>HtmlResponse</span> <span class='nf'>Get</span><span class='p'>()</span>
+    <span class='p'>{</span>
+      <span class='k'>return</span> <span class='k'>new</span> <span class='nf'>HtmlResponse</span><span class='p'>(</span><span class='s'>@&quot;&lt;html&gt;&lt;body style=&quot;&quot;font-size: 3em;&quot;&quot;&gt;Hello, world.&lt;/body&gt;&lt;/html&gt;&quot;</span><span class='p'>);</span>
+    <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<h2 id='step_10__test_your_route'>Step 10 - Test Your Route!</h2>
+
+<p>Run the project in Visual Studio and navigate to the <em>/hello_world</em> path. You&#8217;ll see the following page, showing that your route was configured properly:</p>
+
+<p><img alt='Route test' src='../../documentation/1.0/images/route-test.png' /></p>
+
+<p><strong>That&#8217;s it! You&#8217;re done!</strong></p>
+
+<p>Continue reading if you&#8217;d like to integrate JuniorRoute&#8217;s diagnostics into your application.</p>
+
+<h2 id='step_11__add_diagnostic_routes'>Step 11 - Add Diagnostic Routes</h2>
+
+<p>Adding diagnostic routes causes significant changes to occur in your configuration class, so replace its code with the following:</p>
+<div class='highlight'><pre><code class='csharp'><span class='k'>using</span> <span class='nn'>System.Linq</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>System.Reflection</span><span class='p'>;</span>
+
+<span class='k'>using</span> <span class='nn'>Junior.Common</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration.AspNet</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration.Diagnostics</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration.ResponseGenerators</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AspNetIntegration.ResponseHandlers</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AutoRouting</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AutoRouting.Containers</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.AutoRouting.ParameterMappers</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.Diagnostics</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.Routing</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.Routing.Caching</span><span class='p'>;</span>
+<span class='k'>using</span> <span class='nn'>Junior.Route.Routing.Diagnostics</span><span class='p'>;</span>
+
+<span class='k'>namespace</span> <span class='nn'>JuniorApplication</span>
+<span class='p'>{</span>
+  <span class='k'>public</span> <span class='k'>class</span> <span class='nc'>JuniorRouteConfiguration</span> <span class='p'>:</span> <span class='n'>JuniorRouteApplicationConfiguration</span>
+  <span class='p'>{</span>
+    <span class='k'>private</span> <span class='k'>readonly</span> <span class='n'>IRouteCollection</span> <span class='n'>_routeCollection</span><span class='p'>;</span>
+
+    <span class='k'>public</span> <span class='nf'>JuniorRouteConfiguration</span><span class='p'>()</span>
+    <span class='p'>{</span>
+      <span class='c1'>// Declare the root endpoint namespace</span>
+      <span class='k'>const</span> <span class='kt'>string</span> <span class='n'>endpointNamespace</span> <span class='p'>=</span> <span class='s'>&quot;JuniorApplication.Endpoints&quot;</span><span class='p'>;</span>
+
+      <span class='c1'>// Create dependencies</span>
+      <span class='kt'>var</span> <span class='n'>guidFactory</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>GuidFactory</span><span class='p'>();</span>
+      <span class='kt'>var</span> <span class='n'>httpRuntime</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>HttpRuntimeWrapper</span><span class='p'>();</span>
+      <span class='kt'>var</span> <span class='n'>urlResolver</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>UrlResolver</span><span class='p'>(()</span> <span class='p'>=&gt;</span> <span class='n'>_routeCollection</span><span class='p'>,</span> <span class='n'>httpRuntime</span><span class='p'>);</span>
+      <span class='kt'>var</span> <span class='n'>restrictionContainer</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>DefaultRestrictionContainer</span><span class='p'>(</span><span class='n'>httpRuntime</span><span class='p'>);</span>
+      <span class='kt'>var</span> <span class='n'>responseGenerators</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>IResponseGenerator</span><span class='p'>[]</span>
+        <span class='p'>{</span>
+          <span class='k'>new</span> <span class='nf'>MostMatchingRestrictionsGenerator</span><span class='p'>(),</span>
+          <span class='k'>new</span> <span class='nf'>UnmatchedRestrictionsGenerator</span><span class='p'>(),</span>
+          <span class='k'>new</span> <span class='nf'>NotFoundGenerator</span><span class='p'>()</span>
+        <span class='p'>};</span>
+      <span class='kt'>var</span> <span class='n'>responseHandlers</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>IResponseHandler</span><span class='p'>[]</span> <span class='p'>{</span> <span class='k'>new</span> <span class='n'>NonCacheableResponseHandler</span><span class='p'>()</span> <span class='p'>};</span>
+      <span class='kt'>var</span> <span class='n'>parameterMappers</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>IParameterMapper</span><span class='p'>[]</span> <span class='p'>{</span> <span class='k'>new</span> <span class='n'>DefaultValueMapper</span><span class='p'>()</span> <span class='p'>};</span>
+      <span class='kt'>var</span> <span class='n'>cache</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>NoCache</span><span class='p'>();</span>
+
+      <span class='c1'>// Provide conventions to a new AutoRouteCollection instance</span>
+      <span class='n'>AutoRouteCollection</span> <span class='n'>autoRouteCollection</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>AutoRouteCollection</span><span class='p'>()</span>
+        <span class='p'>.</span><span class='n'>RestrictionContainer</span><span class='p'>(</span><span class='n'>restrictionContainer</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>Assemblies</span><span class='p'>(</span><span class='n'>Assembly</span><span class='p'>.</span><span class='n'>GetExecutingAssembly</span><span class='p'>())</span>
+        <span class='p'>.</span><span class='n'>NameAfterRelativeClassNamespaceAndClassName</span><span class='p'>(</span><span class='n'>endpointNamespace</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>IdRandomly</span><span class='p'>(</span><span class='n'>guidFactory</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>ResolvedRelativeUrlFromRelativeClassNamespacesAndClassNames</span><span class='p'>(</span><span class='n'>endpointNamespace</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>RestrictHttpMethodsToMethodsNamedAfterStandardHttpMethods</span><span class='p'>()</span>
+        <span class='p'>.</span><span class='n'>RestrictRelativeUrlsToRelativeClassNamespacesAndClassNames</span><span class='p'>(</span><span class='n'>endpointNamespace</span><span class='p'>)</span>
+        <span class='p'>.</span><span class='n'>RespondWithMethodReturnValuesThatImplementIResponse</span><span class='p'>(</span><span class='n'>parameterMappers</span><span class='p'>)</span>
+        <span class='c1'>// Add diagnostics routes</span>
+        <span class='p'>.</span><span class='n'>AdditionalRoutes</span><span class='p'>(</span>
+          <span class='n'>DiagnosticConfigurationRoutes</span><span class='p'>.</span><span class='n'>Instance</span><span class='p'>.</span><span class='n'>GetRoutes</span><span class='p'>(</span>
+            <span class='n'>guidFactory</span><span class='p'>,</span>
+            <span class='n'>urlResolver</span><span class='p'>,</span>
+            <span class='n'>httpRuntime</span><span class='p'>,</span>
+            <span class='s'>&quot;_diagnostics&quot;</span><span class='p'>,</span>
+            <span class='k'>new</span> <span class='nf'>AspNetDiagnosticConfiguration</span><span class='p'>(</span>
+              <span class='n'>cache</span><span class='p'>.</span><span class='n'>GetType</span><span class='p'>(),</span>
+              <span class='n'>responseGenerators</span><span class='p'>.</span><span class='n'>Select</span><span class='p'>(</span><span class='n'>arg</span> <span class='p'>=&gt;</span> <span class='n'>arg</span><span class='p'>.</span><span class='n'>GetType</span><span class='p'>()),</span>
+              <span class='n'>responseHandlers</span><span class='p'>.</span><span class='n'>Select</span><span class='p'>(</span><span class='n'>arg</span> <span class='p'>=&gt;</span> <span class='n'>arg</span><span class='p'>.</span><span class='n'>GetType</span><span class='p'>())),</span>
+            <span class='k'>new</span> <span class='nf'>RoutingDiagnosticConfiguration</span><span class='p'>(()</span> <span class='p'>=&gt;</span> <span class='n'>_routeCollection</span><span class='p'>)));</span>
+
+      <span class='c1'>// Generate routes</span>
+      <span class='n'>_routeCollection</span> <span class='p'>=</span> <span class='n'>autoRouteCollection</span><span class='p'>.</span><span class='n'>GenerateRouteCollection</span><span class='p'>();</span>
+
+      <span class='c1'>// Create an HTTP handler</span>
+      <span class='kt'>var</span> <span class='n'>httpHandler</span> <span class='p'>=</span> <span class='k'>new</span> <span class='n'>AspNetHttpHandler</span><span class='p'>(</span><span class='n'>_routeCollection</span><span class='p'>,</span> <span class='n'>cache</span><span class='p'>,</span> <span class='n'>responseGenerators</span><span class='p'>,</span> <span class='n'>responseHandlers</span><span class='p'>);</span>
+
+      <span class='c1'>// Set the handler in the base class</span>
+      <span class='n'>SetHandler</span><span class='p'>(</span><span class='n'>httpHandler</span><span class='p'>);</span>
+    <span class='p'>}</span>
+  <span class='p'>}</span>
+<span class='p'>}</span>
+</code></pre>
+</div>
+<p>Run the project in Visual Studio and navigate to the <em>/_diagnostics</em> path. You&#8217;ll see the following page, showing that your diagnostics routes were configured properly:</p>
+
+<p><img alt='Diagnostics route test' src='../../documentation/1.0/images/diagnostics-route-test.png' /></p></div>
+</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="../../js/plugins.js"></script>
+		<script>
+			var _gaq=[['_setAccount','UA-36144505-1'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+    </body>
+</html>
