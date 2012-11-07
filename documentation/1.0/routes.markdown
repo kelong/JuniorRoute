@@ -26,7 +26,7 @@ Route IDs are GUIDs that must be unique when added to a [route collection]({{ pa
 
 Resolved Relative URL
 -
-A route's resolved relative URL is the URL that is returned when using a [URL resolver]({{ page.documentationroot }}url_resolvers.html) to resolve a route's absolute URL. All routes must have a resolved relative URL.
+A route's resolved relative URL is the URL that is returned when using a [URL resolver]({{ page.documentationroot }}url_resolvers.html) to resolve a route's relative URL to an absolute one. All routes must have a resolved relative URL.
 
 The term *relative* means relative to the application's root URL. For example, if an IIS application using JuniorRoute lives at http://localhost/MyApplication, a relative URL is relative to that path. A route with a resolved relative URL of *about* resolves to an absolute URL of */MyApplication/about*. Resolved relative URLs make it easy to host an application with any root URL without having to change the routes themselves.
 
