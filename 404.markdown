@@ -1,8 +1,0 @@
----
-layout: documentation_1_0
-title: 404 - JuniorRoute
-documentationroot: documentation/1.0/
----
-Whoops!
-=
-The content you requested was not found.
