@@ -1,6 +1,6 @@
 ---
 layout: documentation_1_0
-title: Introduction - JuniorRoute
+title: Introduction
 documentationroot: documentation/1.0/
 ---
 What is JuniorRoute?
