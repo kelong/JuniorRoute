@@ -21,7 +21,7 @@ code
 {
 	background-color: #0b3565;
 	color: #fff;
-	padding: 10px 20px;
+	padding: 10px 10px 10px 20px;
 }
 .header h1
 {
@@ -39,6 +39,23 @@ code
 	line-height: 1em;
 	margin: 5px 0 0 0;
 	padding-bottom: 10px;
+}
+.header .table
+{
+	display: table;
+	width: 100%;
+}
+.header .table-cell
+{
+	display: table-cell;
+}
+.header .table-cell.headings
+{
+	width: 100%;
+}
+.header .table-cell.social
+{
+	vertical-align: bottom;
 }
 .header-links
 {
