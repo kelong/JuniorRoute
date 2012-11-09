@@ -3,6 +3,9 @@ layout: documentation_1_0
 title: Introduction
 documentationroot: documentation/1.0/
 ---
+# <span class="get-started">Get Started In Three Simple Steps!</span>
+How easy is it to bootstrap a JuniorRoute project? How about just <span class="get-started">three simple steps</span>! See the [quick-start]({{ page.documentationroot }}quick_start.html) page to begin.
+
 What is JuniorRoute?
 =
 JuniorRoute is a routing framework for .NET. JuniorRoute's simple approach to routing is a better fit for the stateless HTTP protocol than controller-driven architectures like ASP.net MVC. JuniorRoute simplifies the routing of an HTTP request message to a code method while providing lots of different ways to control how that occurs. JuniorRoute's simplest configurations involve very little bootstrapping code, but it also provides configurability and extensibility just where you need it.
