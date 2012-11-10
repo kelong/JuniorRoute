@@ -57,6 +57,10 @@ code
 {
 	vertical-align: bottom;
 }
+.header .table-cell.social .fb-like
+{
+	margin-bottom: 5px;
+}
 .header-links
 {
 	background-color: #607c9d;
