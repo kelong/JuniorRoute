@@ -18,13 +18,13 @@ A file asset consists of these concepts:
 * A file path relative to the root application directory
 * An optional encoding
 
-In the below example, a file asset is created that represents a CSS asset with a UTF-8 encoding:
+In the below example, a file asset is created that represents a CSS asset with a UTF-8 encoding.
 
 {% highlight csharp %}
 new FileAsset(@"stylesheets\common.css", Encoding.UTF8);
 {% endhighlight %}
 
-In the below example a file asset is created that represents a CSS asset with the default encoding:
+In the below example a file asset is created that represents a CSS asset with the default encoding.
 
 {% highlight csharp %}
 new FileAsset(@"stylesheets\common.css");
@@ -38,7 +38,7 @@ A directory asset consists of these concepts:
 * An option to include subfolders as part of the asset
 * An optional file filter
 
-In the below example, a directory asset is created that represents a set of JavaScript assets with the default encoding and performs a recursive search:
+In the below example, a directory asset is created that represents a set of JavaScript assets with the default encoding and performs a recursive search.
 
 {% highlight csharp %}
 new DirectoryAsset("js", searchPattern:"*.js", option:SearchOption.AllDirectories)
@@ -48,7 +48,7 @@ File Filters
 -
 When directory assets are resolved to file assets, the file filter, if specified, is used to control which files are included in the output. By default, no file filter is specified, so all files matching the search pattern are included in the output.
 
-In the below example, a custom file filter filters out files whose names contain *exclude*:
+In the below example, a custom file filter filters out files whose names contain *exclude*.
 
 {% highlight csharp %}
 public class ExcludeFileFilter : IFileFilter

@@ -16,7 +16,7 @@ FormsAuthenticationData
 -
 This class deserializes the forms authentication ticket's JSON user data, if any, to the specified type.
 
-In the below example, data is retrieved from within an endpoint method:
+In the below example, data is retrieved from within an endpoint method.
 
 {% highlight csharp %}
 public class Account

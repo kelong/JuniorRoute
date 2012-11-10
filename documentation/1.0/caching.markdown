@@ -57,7 +57,7 @@ new Route("route", Guid.NewGuid(), "route")
   .RespondWith(response);
 {% endhighlight %}
 
-In the below example, an eTag is associated with the response:
+In the below example, an eTag is associated with the response.
 
 {% highlight csharp %}
 Response response = Response

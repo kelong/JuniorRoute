@@ -8,7 +8,7 @@ Asset Management - {{ page.title }}
 =
 When retrieving [bundle]({{ page.documentationroot }}bundles.html) contents, an asset concatenator may optionally be provided. Asset concatenators take a set of [transformed]({{ page.documentationroot }}(asset_transformers.html) asset contents and combine them into a single entity.
 
-In the below example, an asset transformer implementation inserts a block comment at the beginning of the contents:
+In the below example, an asset transformer implementation inserts a block comment at the beginning of the contents.
 
 {% highlight csharp %}
 public class CommentAdditionTransformer : IAssetTransformer

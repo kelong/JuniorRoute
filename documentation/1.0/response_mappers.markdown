@@ -18,7 +18,7 @@ NoContentMapper
 -
 This mapper always maps a 204 No Content response.
 
-In the below example, a ```NoContentMapper``` is instantiated:
+In the below example, a ```NoContentMapper``` is instantiated.
 
 {% highlight csharp %}
 new NoContentMapper();
@@ -30,7 +30,7 @@ This mapper returns the response of an invoked endpoint method. If the method re
 
 ```ResponseMethodReturnTypeMapper``` exposes several fluent-interface methods for easily configuring associated [parameter mappers]({{ page.documentationroot }}parameter_mappers.html). Parameter mappers should be provided, if necessary, so that endpoint method parameters may have their values mapped.
 
-In the below example, a ```ResponseMethodReturnTypeMapper``` instance is configured with a JSON model mapper:
+In the below example, a ```ResponseMethodReturnTypeMapper``` instance is configured with a JSON model mapper.
 
 {% highlight csharp %}
 new ResponseMethodReturnTypeMapper()

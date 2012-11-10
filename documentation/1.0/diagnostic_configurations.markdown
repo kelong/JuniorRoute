@@ -12,7 +12,7 @@ Diagnostic configurations require the following:
 * A method to retrieve routes
 * A method to retrieve home view link information
 
-In the below example, a diagnostic configuration is implemented that adds a view route with a link under the heading *Custom*:
+In the below example, a diagnostic configuration is implemented that adds a view route with a link under the heading *Custom*.
 
 {% highlight csharp %}
 public abstract class CurrentTimeView : View

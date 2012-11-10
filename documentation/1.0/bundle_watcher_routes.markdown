@@ -16,7 +16,7 @@ JuniorRoute provides two built-in implementations:
 
 These two implementations set the appropriate cache policies, eTags, expiration timestamps and content types for proper client caching. They also refresh their resolved relative URL, restrictions and contents when the bundle watcher indicates a change to the bundle.
 
-In the below example, a new CSS bundle watcher route is added to a route collection:
+In the below example, a new CSS bundle watcher route is added to a route collection.
 
 {% highlight csharp %}
 Bundle bundle = Bundle.FromDirectory("css", searchPattern:"*.css");

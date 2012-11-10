@@ -24,7 +24,7 @@ UrlResolver
 
 Taking the application root URL from the ```IHttpRuntime``` implementation, ```UrlResolver``` then appends a relative URL to that path. The relative path can be either a plain string or it can be determined by [route]({{ page.documentationroot }})routes.html) name or route ID. Absolute URLs resolved by ```UrlResolver``` do not have a trailing slash ('/').
 
-In the below example, an absolute URL is resolved from a relative URL:
+In the below example, an absolute URL is resolved from a relative URL.
 
 {% highlight csharp %}
 var resolver = new UrlResolver(routeCollection, httpRuntime);
@@ -32,7 +32,7 @@ var resolver = new UrlResolver(routeCollection, httpRuntime);
 resolver.Absolute("relative");
 {% endhighlight %}
 
-In the below example, an absolute URL is resolved from a route name:
+In the below example, an absolute URL is resolved from a route name.
 
 {% highlight csharp %}
 var resolver = new UrlResolver(routeCollection, httpRuntime);
@@ -40,7 +40,7 @@ var resolver = new UrlResolver(routeCollection, httpRuntime);
 resolver.Route("Dashboard");
 {% endhighlight %}
 
-In the below example, an absolute URL is resolved from a route ID:
+In the below example, an absolute URL is resolved from a route ID.
 
 {% highlight csharp %}
 var resolver = new UrlResolver(routeCollection, httpRuntime);
