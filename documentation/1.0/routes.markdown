@@ -32,7 +32,7 @@ The term *relative* means relative to the application's root URL. For example, i
 
 Restrictions
 -
-Route restrictions determine if a particular route is allowed to handle a particular HTTP request message. JuniorRoute comes with many restrictions built-in.
+Restrictions determine if a particular route is allowed to handle a particular HTTP request message. JuniorRoute comes with many restrictions built-in.
 
 Authentication Provider
 -
