@@ -14,7 +14,7 @@ JuniorRoute provides the built-in ```FormsAuthenticationProvider``` implementati
 
 FormsAuthenticationProvider
 -
-This provider greatly simplifies the process of integrating forms authentication with JuniorRouteuses by encapsulating ASP.net's ```FormsAuthentication``` class to manage cookies and tickets. Developers may choose to append the URL to the redirect when authorization fails. Developers may also change the name of the forms cookie itself.
+This provider greatly simplifies the process of integrating forms authentication by encapsulating ASP.net's ```FormsAuthentication``` class to manage cookies and tickets. Developers may choose to append the URL to the redirect when authorization fails. Developers may also change the name of the forms cookie itself.
 
 In the below example, a route authenticates an ASP.net forms authentication ticket sent with HTTP request messages. If the request contains a valid ticket then the route's regular response may be sent to the client. However, if the ticket is missing, invalid or expired, the client is redirected to a log-in page.
 
