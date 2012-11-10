@@ -42,3 +42,5 @@ Run your project. It's normal to see a 404 because initially there are no routes
 ![Diagnostics]({{ page.documentationroot }}images/diagnostics.png "Diagnostics")
 
 **That's it! You're done!**
+
+Now that you have your first JuniorRoute application working, please see the *core concepts* documentation in the sidebar. Understanding JuniorRoute's domain-specific language will help you get the most out of JuniorRoute.
