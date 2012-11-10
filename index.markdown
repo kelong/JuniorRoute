@@ -4,7 +4,7 @@ title: Introduction
 documentationroot: documentation/1.0/
 ---
 # <span class="get-started">Get Started In Three Simple Steps!</span>
-How easy is it to bootstrap a JuniorRoute project? How about just <span class="get-started">three simple steps</span>! See the [quick-start]({{ page.documentationroot }}quick_start.html) page to begin.
+How easy is it to bootstrap a JuniorRoute project? How about just three simple steps! See the [quick-start]({{ page.root }}quick_start.html) page to begin.
 
 What is JuniorRoute?
 =

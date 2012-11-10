@@ -1,12 +1,11 @@
 ---
 layout: documentation_1_0
-title: Quick Start
-root: ../../
-documentationroot: ../../documentation/1.0/
+title: Quick-start
+documentationroot: documentation/1.0/
 ---
 {{ page.title }}
 =
-Getting started with JuniorRoute is very easy. This page shows you the few simple steps required to get JuniorRoute integrated with an ASP.net Web application.
+Getting started with JuniorRoute is very easy. This page shows you the few simple steps required to create a new JuniorRoute Web application.
 
 Notes:
 * This tutorial was written using Visual Studio 2012 with C#, so some steps may vary depending on your Visual Studio version and language selection.

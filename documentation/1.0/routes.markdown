@@ -16,6 +16,12 @@ A route is the means by which a HTTP request message is handled by code. Routes 
 
 Additionally, route matching is how a route determines if it should handle a HTTP message. A route compares the HTTP message with its list of restrictions. If all the restrictions are met, the route matches.
 
+In the below example, a route named *Account* with a random ID and a resolved relative URL of *account* is created.
+
+{% highlight csharp %}
+new Route("Account", Guid.NewGuid(), "account");
+{% endhighlight %}
+
 Name
 -
 Route names are intended to be human-readable and should usually be unique. They are useful when identifying, at-a-glance, a route in code.

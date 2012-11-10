@@ -89,6 +89,11 @@ code
 	border-left: 1px #a1aebd solid;
 	display: table-cell;
 }
+.header-links .quick-start
+{
+	background-color: #2fa02f;
+	border-right: none;
+}
 .header-links .dummy
 {
 	color: #fff;
@@ -150,11 +155,6 @@ code
 {
 	padding-left: 15px;
 }
-.documentation .quick-start
-{
-	color: #ff3c00;
-	font-weight: bold;
-}
 .documentation .document
 {
 	display: table-cell;
@@ -196,5 +196,5 @@ code
 }
 .documentation .get-started
 {
-	color: #ff3c00;
+	color: #2fa02f;
 }
