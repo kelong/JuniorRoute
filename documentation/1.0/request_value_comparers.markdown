@@ -14,7 +14,7 @@ Request value comparers allow the developer to control how a [restriction]({{ pa
 
 Plain comparers call ```String.Equals``` with the appropriate ```StringComparison``` enumeration value. Regular expression comparers call ```Regex.IsMatch``` with the appropriate case-sensitivity options.
 
-In the below example, a developer uses a regular expression pattern to restrict by host.
+In the below example, a route is restricted to hosts matching a regular expression pattern.
 
 {% highlight csharp %}
 new Route("Account", Guid.NewGuid(), "account")
