@@ -4,9 +4,14 @@ body
 	color: #212c39;
 	font-family: Georgia, sans-serif;
 }
-a, a:hover, a:visited, a:active
+a, a:hover, a:active
 {
 	color: #0073ff;
+	text-decoration: none;
+}
+a:visited
+{
+	color: #a800ff;
 	text-decoration: none;
 }
 code
@@ -126,7 +131,7 @@ code
 	font-style: italic;
 }
 
-/* Documentation */
+/* Documentation and Tutorials */
 .documentation
 {
 	display: table;
@@ -150,6 +155,10 @@ code
 	border-top: 1px solid #a3b5c9;
 	font-weight: bold;
 	padding-top: 5px;
+}
+.documentation .tutorial-version
+{
+	font-weight: bold;
 }
 .documentation .navigation .section
 {
