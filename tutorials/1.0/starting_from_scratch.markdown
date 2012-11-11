@@ -15,9 +15,9 @@ Create a new ASP.NET empty Web application solution. Be sure to target at least 
 
 ![Create a new ASP.NET empty Web application]({{ page.tutorialroot }}images/new-aspnet-empty-web-application.png "Create a new ASP.NET empty Web application")
 
-Step 2 - Remove All References From the New Project
+Step 2 - Remove References From the New Project
 -
-Remove all the references Visual Studio has added. Your project won't need most of them.
+Remove all references except System and System.Web.
 
 ![Remove references]({{ page.tutorialroot }}images/remove-references.png "Remove references")
 
