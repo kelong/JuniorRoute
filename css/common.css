@@ -26,6 +26,7 @@ code
 {
 	background-color: #0b3565;
 	color: #fff;
+	height: 90px;
 	padding: 10px 10px 10px 20px;
 }
 .header h1
@@ -60,6 +61,10 @@ code
 }
 .header .table-cell.social
 {
+	min-width: 150px;
+	max-width: 150px;
+	overflow: hidden;
+	width: 150px;
 	vertical-align: bottom;
 }
 .header .table-cell.social .fb-like
@@ -146,19 +151,20 @@ code
 	vertical-align: top;
 	white-space: nowrap;
 }
+.documentation .navigation .documentation-version
+{
+	border-top: 1px solid #8da8c7;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.documentation .navigation .tutorial-version
+{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
 .documentation .navigation a
 {
 	display: inline-block;
-}
-.documentation .documentation-version
-{
-	border-top: 1px solid #a3b5c9;
-	font-weight: bold;
-	padding-top: 5px;
-}
-.documentation .tutorial-version
-{
-	font-weight: bold;
 }
 .documentation .navigation .section
 {
@@ -171,34 +177,51 @@ code
 .documentation .document
 {
 	display: table-cell;
-	padding: 10px;
 	vertical-align: top;
 	width: 100%;
 }
-.documentation .document h1
+.documentation .document .version
+{
+	background-color: #eee;
+	padding: 5px;
+}
+.documentation .document .version a
+{
+	display: inline-block;
+	margin-left: 5px;
+}
+.documentation .document .version .current-document
+{
+	font-weight: bold;
+}
+.documentation .document .content
+{
+	margin: 10px;
+}
+.documentation .document .content h1
 {
 	border-bottom: 1px solid #b5c0cd;
 	font-size: 2em;
 	font-weight: normal;
 	margin: 0;
 }
-.documentation .document h2
+.documentation .document .content h2
 {
 	font-size: 1.5em;
 	font-weight: normal;
 	margin: 0;
 }
-.documentation .document h3
+.documentation .document .content h3
 {
 	font-size: 1em !important;
 	font-weight: bold !important;
 	margin: 0;
 }
-.documentation .document p
+.documentation .document .content p
 {
 	margin: 1em 0;
 }
-.documentation .document pre
+.documentation .document .content pre
 {
 	background-color: #eee;
 	border: 1px dashed #aaa;

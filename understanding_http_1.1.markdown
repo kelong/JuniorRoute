@@ -1,7 +1,6 @@
 ---
-layout: documentation_1_0
+layout: documentation_1_x
 title: Understanding HTTP 1.1
-documentationroot: documentation/1.0/
 ---
 {{ page.title }}
 =

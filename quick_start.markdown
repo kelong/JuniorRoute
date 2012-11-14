@@ -1,7 +1,6 @@
 ---
-layout: documentation_1_0
+layout: documentation_1_x
 title: Quick-start
-documentationroot: documentation/1.0/
 ---
 {{ page.title }}
 =
@@ -23,7 +22,7 @@ Follow these steps:
 5. Click Download and accept the license agreement
 6. Click Close to close the Extensions and Updates dialog
 
-![Install extension]({{ page.documentationroot }}images/install-extension.png "Install extension")
+![Install extension](images/install-extension.png "Install extension")
 
 Step 2 - Create a New JuniorRoute Application
 -
@@ -32,13 +31,13 @@ Step 2 - Create a New JuniorRoute Application
 3. Select the Web category
 4. Enter a project name and click OK
 
-![New project]({{ page.documentationroot }}images/new-project.png "New project")
+![New project](images/new-project.png "New project")
 
 Step 3 - Run Your Application
 -
 Run your project. It's normal to see a 404 because initially there are no routes defined for the root path. Navigate to */_diagnostics* and you should see the diagnostics page.
 
-![Diagnostics]({{ page.documentationroot }}images/diagnostics.png "Diagnostics")
+![Diagnostics](images/diagnostics.png "Diagnostics")
 
 **That's it! You're done!**
 

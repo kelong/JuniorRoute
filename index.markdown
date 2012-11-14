@@ -1,7 +1,6 @@
 ---
-layout: documentation_1_0
+layout: documentation_1_x
 title: Features and Benefits
-documentationroot: documentation/1.0/
 ---
 {{ page.title }}
 =
@@ -16,11 +15,11 @@ Simplified Architecture
 
 Convention-driven Automatic Route Generation
 -
-[Auto-routing]({{ page.documentationroot }}auto_routing.html) skips tedious and error-prone [route]({{ page.documentationroot }}routes.html)-by-route configuration in favor of automatic route generation using conventions. Once conventions are established, simply add new endpoint classes and methods to create new routes. It couldn't be simpler!
+[Auto-routing](documentation/auto_routing.html) skips tedious and error-prone [route](documentation/routes.html)-by-route configuration in favor of automatic route generation using conventions. Once conventions are established, simply add new endpoint classes and methods to create new routes. It couldn't be simpler!
 
 Bundling and Minification
 -
-[Bundling]({{ page.documentationroot }}bundles.html) and [minification]({{ page.documentationroot }}asset_transformers.html) are requirements for today's high-performance and bandwidth-conserving Web applications. Auto-routing exposes a simple fluent interface for configuring your bundles and integrates with YUICompressor .NET for reliable minification of your CSS and JavaScript assets.
+[Bundling](documentation/bundles.html) and [minification](documentation/asset_transformers.html) are requirements for today's high-performance and bandwidth-conserving Web applications. Auto-routing exposes a simple fluent interface for configuring your bundles and integrates with YUICompressor .NET for reliable minification of your CSS and JavaScript assets.
 
 IoC-ready
 -
