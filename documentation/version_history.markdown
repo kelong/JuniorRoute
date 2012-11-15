@@ -1,7 +1,7 @@
 ---
 layout: documentation
 title: Version History
-root: ../../
+root: ../
 ---
 {{ page.title }}
 =

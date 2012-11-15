@@ -1,5 +1,5 @@
 ---
-layout: documentation_1_x
+layout: documentation
 title: Quick-start
 ---
 {{ page.title }}

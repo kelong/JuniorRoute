@@ -1,5 +1,5 @@
 ---
-layout: documentation_1_x
+layout: documentation
 title: Understanding HTTP 1.1
 ---
 {{ page.title }}

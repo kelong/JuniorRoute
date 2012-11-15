@@ -1,5 +1,5 @@
 ---
-layout: documentation_1_x
+layout: documentation
 title: Features and Benefits
 ---
 {{ page.title }}

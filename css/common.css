@@ -119,11 +119,13 @@ code
 .header-links .menu-drop-down
 {
 	background-color: #607c9d;
+	border-top: 1px solid #a1aebd;
 	position: absolute;
 }
-.header-links .menu-drop-down
+.header-links .menu-drop-down hr
 {
-	border-top: 1px solid #0b3565;
+	border-top: 1px solid #a1aebd;
+	margin: 5px 0;
 }
 .header-links .menu-open
 {
@@ -150,17 +152,6 @@ code
 	padding: 10px;
 	vertical-align: top;
 	white-space: nowrap;
-}
-.documentation .navigation .documentation-version
-{
-	border-top: 1px solid #8da8c7;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-.documentation .navigation .tutorial-version
-{
-	font-weight: bold;
-	margin-bottom: 10px;
 }
 .documentation .navigation a
 {

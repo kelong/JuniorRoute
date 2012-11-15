@@ -1,0 +1,83 @@
+---
+layout: default
+---
+<div class="documentation">
+	<div class="navigation">
+		<a href="{{ page.root }}index.html">Features and Benefits</a><br/>
+		<a href="{{ page.root }}understanding_http_1.1.html">Understanding HTTP 1.1</a><br/>
+		<a href="{{ page.root }}documentation/version_history.html">Version history</a>
+		<div class="section">Core concepts</div>
+		<div class="section-links">
+			<a href="{{ page.root }}documentation/routes.html">Routes</a><br/>
+			<a href="{{ page.root }}documentation/route_collections.html">Route collections</a><br/>
+			<a href="{{ page.root }}documentation/restrictions.html">Restrictions</a><br/>
+			<a href="{{ page.root }}documentation/responses.html">Responses</a><br/>
+			<a href="{{ page.root }}documentation/caching.html">Caching</a><br/>
+			<a href="{{ page.root }}documentation/authentication_providers.html">Authentication providers</a><br/>
+			<a href="{{ page.root }}documentation/request_value_comparers.html">Request value comparers</a><br/>
+			<a href="{{ page.root }}documentation/url_resolvers.html">URL resolvers</a>
+		</div>
+		<div class="section">Asset management</div>
+		<div class="section-links">
+			<a href="{{ page.root }}documentation/assets.html">Assets</a><br/>
+			<a href="{{ page.root }}documentation/bundles.html">Bundles</a><br/>
+			<a href="{{ page.root }}documentation/asset_concatenators.html">Asset concatenators</a><br/>
+			<a href="{{ page.root }}documentation/asset_transformers.html">Asset transformers</a><br/>
+			<a href="{{ page.root }}documentation/bundle_watchers.html">Bundle watchers</a><br/>
+			<a href="{{ page.root }}documentation/bundle_watcher_routes.html">Bundle watcher routes</a>
+		</div>
+		<div class="section">
+			<a href="{{ page.root }}documentation/diagnostics.html">Diagnostics</a>
+			<div class="section-links">
+				<a href="{{ page.root }}documentation/diagnosticroutehelper.html">DiagnosticRouteHelper</a><br/>
+				<a href="{{ page.root }}documentation/diagnostic_configurations.html">Diagnostic configurations</a>
+			</div>
+		</div>
+		<div class="section">ASP.net integration</div>
+		<div class="section-links">
+			<a href="{{ page.root }}documentation/juniorrouteapplication.html">JuniorRouteApplication</a><br/>
+			<a href="{{ page.root }}documentation/juniorrouteapplicationconfiguration.html">JuniorRouteApplicationConfiguration</a><br/>
+			<a href="{{ page.root }}documentation/aspnethttphandler.html">AspNetHttpHandler</a><br/>
+			<a href="{{ page.root }}documentation/response_generators.html">Response generators</a><br/>
+			<a href="{{ page.root }}documentation/response_handlers.html">Response handlers</a><br/>
+			<a href="{{ page.root }}documentation/file_systems.html">FileSystem</a><br/>
+			<a href="{{ page.root }}documentation/url_resolvers.html">UrlResolver</a>
+		</div>
+		<div class="section">
+			<a href="{{ page.root }}documentation/auto_routing.html">Auto-routing</a>
+			<div class="section-links">
+				<a href="{{ page.root }}documentation/autoroutecollection.html">AutoRouteCollection</a><br/>
+				<a href="{{ page.root }}documentation/containers.html">Containers</a><br/>
+				<a href="{{ page.root }}documentation/class_filters.html">Class filters</a><br/>
+				<a href="{{ page.root }}documentation/method_filters.html">Method filters</a><br/>
+				<a href="{{ page.root }}documentation/name_mappers.html">Name mappers</a><br/>
+				<a href="{{ page.root }}documentation/id_mappers.html">ID mappers</a><br/>
+				<a href="{{ page.root }}documentation/resolved_relative_url_mappers.html">Resolved relative URL mappers</a><br/>
+				<a href="{{ page.root }}documentation/restriction_mappers.html">Restriction mappers</a><br/>
+				<a href="{{ page.root }}documentation/parameter_mappers.html">Parameter mappers</a><br/>
+				<a href="{{ page.root }}documentation/model_property_mappers.html">Model property mappers</a><br/>
+				<a href="{{ page.root }}documentation/response_mappers.html">Response mappers</a><br/>
+				<a href="{{ page.root }}documentation/authentication_strategies.html">Authentication strategies</a><br/>
+				<a href="{{ page.root }}documentation/forms_authentication.html">Forms authentication</a><br/>
+				<a href="{{ page.root }}documentation/request_contexts.html">Request contexts</a>
+			</div>
+		</div>
+	</div>
+	<div class="document">
+		{% if page.documentationversions %}
+		<div class="version">
+			Version:
+			{% for documentationversion in page.documentationversions %}
+				{% if forloop.index0 == 0 %}
+				<a href="#">{{ documentationversion }}</a>
+				{% else %}
+				<a href="#" data-version="{{ documentationversion }}">{{ documentationversion }}</a>
+				{% endif %}
+			{% endfor %}
+		</div>
+		{% endif %}
+		<div class="content">
+		{{ content }}
+		</div>
+	</div>
+</div>
