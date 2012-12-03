@@ -8,6 +8,7 @@ root: ../
 <br/>
 December 2, 2012
 -
+
 ### General
 * Existing Visual Studio project templates updated to use latest packages
 * Two new Visual Studio project templates created to support Razor view engine integration
@@ -52,11 +53,13 @@ December 2, 2012
 
 November 8, 2012
 -
+
 ### General
 * Visual Studio project templates completed
 
 November 6, 2012
 -
+
 ### General
 * Initial release
 * NuGet packages completed
