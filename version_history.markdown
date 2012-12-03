@@ -11,6 +11,9 @@ December 2, 2012
 General
 * Existing Visual Studio project templates updated to use latest packages
 * Two new Visual Studio project templates created to support Razor view engine integration
+* Updated NUnit to 2.6.2
+* Updated DotSettings file to use ReSharper 7.1 settings
+* Removed old RazorEngine implementation
 
 ASP.net Integration 2.0.0
 * Major version update due to breaking change in dependency
