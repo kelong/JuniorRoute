@@ -24,17 +24,17 @@ ASP.net Integration Diagnostics 2.0.0
 * Updated Spark to 1.7.5
 
 Assets 2.0.0
-* Major version update due to breaking change in dependency
+<ul><li>Major version update due to breaking change in dependency</li></ul>
 
 Assets - YUICompressor .NET 2.0.0
-* Major version update due to breaking change in dependency
+<ul><li>Major version update due to breaking change in dependency</li></ul>
 
 Auto-routing 2.0.0
 * Major version update due to breaking change in dependency
 * Updated Json.NET to 4.5.11
 
 Core 2.0.0
-* HashSetExtensions is now SetExtensions; extends ISet<> instead of HashSet
+<ul><li>HashSetExtensions is now SetExtensions; extends ISet&lt;&gt; instead of HashSet</li></ul>
 
 Core Diagnostics
 * Major version update due to breaking change in dependency
@@ -45,14 +45,15 @@ Diagnostics
 * Updated Spark to 1.7.5
 
 Razor View Engine
-* Initial release
+<ul><li>Initial release</li></ul>
 
 Razor View Engine - Routing Integration
-* Initial release
+<ul><li>Initial release</li></ul>
 
 November 8, 2012
 -
-* Visual Studio project templates completed
+General
+<ul><li>Visual Studio project templates completed</li></ul>
 
 November 6, 2012
 -
