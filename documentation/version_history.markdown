@@ -37,18 +37,18 @@ December 2, 2012
 ### Core 2.0.0
 * HashSetExtensions is now SetExtensions; extends ISet<> instead of HashSet
 
-### Core Diagnostics
+### Core Diagnostics 2.0.0
 * Major version update due to breaking change in dependency
 * Updated Spark to 1.7.5
 
-### Diagnostics
+### Diagnostics 2.0.0
 * Major version update due to breaking change in dependency
 * Updated Spark to 1.7.5
 
-### Razor View Engine
+### Razor View Engine 1.0.1
 * Initial release
 
-### Razor View Engine - Routing Integration
+### Razor View Engine - Routing Integration 1.0.1
 * Initial release
 
 November 8, 2012
