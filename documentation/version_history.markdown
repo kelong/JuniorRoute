@@ -6,6 +6,9 @@ root: ../
 {{ page.title }}
 =
 <br/>
+Coming Soon
+-
+<ul><li>Razor view engine layout support</li></ul>
 December 2, 2012
 -
 <br/>

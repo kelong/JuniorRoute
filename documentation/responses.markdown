@@ -103,7 +103,7 @@ Cookies
 -
 Responses may contain cookies that a developer wishes to set. Supplying cookies populates the appropriate Set-Cookie response headers. JuniorRoute provides the built-in ```Cookie``` class to represent cookies.
 
-The below example demonstrates a route returning a 200.0 status code and a cooke named *mycookie* with value *value*.
+The below example demonstrates a route returning a 200.0 status code and a cookie named *mycookie* with value *value*.
 
 {% highlight csharp %}
 new Route("route", Guid.NewGuid(), "route")
