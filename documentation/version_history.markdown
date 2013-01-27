@@ -6,9 +6,19 @@ root: ../
 {{ page.title }}
 =
 <br/>
-Coming Soon
+January 27, 2013
 -
-<ul><li>Razor view engine layout support</li></ul>
+<br/>
+### Razor View Engine 2.0.0
+* Added support for layouts, sections and includes
+* Fixed a critical bug in ```TemplateCodeBuilder``` where only the first template type implementation would be built correctly
+
+### Razor View Engine - Routing Integration 2.0.0
+<ul><li><code>ITemplateRepository</code> and <code>FileSystemRepository</code> can now retrieve templates in addition to executing them</li></ul>
+
+### Assets - YUICompressor .NET 2.1.0
+<ul><li>Updated YUICompressor .NET to 2.1.1.0</li></ul>
+-
 December 2, 2012
 -
 <br/>
@@ -21,7 +31,7 @@ December 2, 2012
 
 ### ASP.net Integration 2.0.0
 * Major version update due to breaking change in dependency
-* Added missing paramName parameters to some uses of ArgumentException
+* Added missing paramName parameters to some uses of ```ArgumentException```
 
 ### ASP.net Integration Diagnostics 2.0.0
 * Major version update due to breaking change in dependency
@@ -38,7 +48,7 @@ December 2, 2012
 * Updated Json.NET to 4.5.11
 
 ### Core 2.0.0
-* HashSetExtensions is now SetExtensions; extends ISet<> instead of HashSet
+* HashSetExtensions is now SetExtensions; extends ```ISet<>``` instead of ```HashSet```
 
 ### Core Diagnostics 2.0.0
 * Major version update due to breaking change in dependency

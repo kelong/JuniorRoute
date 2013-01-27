@@ -2,7 +2,7 @@
 layout: documentation
 title: Templates
 root: ../../
-documentationversions: [1.0]
+documentationversions: [1.0,2.0]
 ---
 Razor View Engine - {{ page.title }}
 =
