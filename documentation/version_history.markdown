@@ -9,6 +9,9 @@ root: ../
 January 27, 2013
 -
 <br/>
+### Razor View Engine 2.0.2
+* Corrected exception message that did not contain generic type parameter
+
 ### Razor View Engine 2.0.1
 * Fixed bug where loaded assemblies with no location were causing exceptions when building Razor templates
 * Fixed bug where globally-qualified namespaces were causing VB template compilation to fail
