@@ -7,6 +7,8 @@ root: ../
 =
 <br/>
 February 23, 2013
+-
+<br/>
 ### Razor View Engine 2.0.3
 * Added missing WriteAttribute implementating to Razor template base class
 
@@ -16,7 +18,6 @@ February 23, 2013
 January 27, 2013
 -
 <br/>
-
 ### Razor View Engine 2.0.1
 * Fixed bug where loaded assemblies with no location were causing exceptions when building Razor templates
 * Fixed bug where globally-qualified namespaces were causing VB template compilation to fail
