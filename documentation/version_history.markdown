@@ -10,10 +10,10 @@ February 23, 2013
 -
 <br/>
 ### Razor View Engine 2.0.3
-* Added missing WriteAttribute implementating to Razor template base class
+<ul><li>Added missing WriteAttribute implementating to Razor template base class</li></ul>
 
 ### Razor View Engine 2.0.2
-* Corrected exception message that did not contain generic type parameter
+<ul><li>Corrected exception message that did not contain generic type parameter</li></ul>
 -
 January 27, 2013
 -
