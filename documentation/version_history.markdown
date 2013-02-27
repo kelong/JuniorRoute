@@ -8,6 +8,7 @@ root: ../
 <br/>
 February 26, 2013
 -
+<br/>
 ### General
 * All assemblies now target .NET Framework 4.5
 
@@ -74,10 +75,11 @@ January 27, 2013
 * Fixed a critical bug in ```TemplateCodeBuilder``` where only the first template type implementation would be built correctly
 
 ### Razor View Engine - Routing Integration 2.0.1
-<ul><li><code>ITemplateRepository</code> and <code>FileSystemRepository</code> can now retrieve templates in addition to executing them</li></ul>
+* <code>ITemplateRepository</code> and <code>FileSystemRepository</code> can now retrieve templates in addition to executing them
 
 ### Assets - YUICompressor .NET 2.1.1
-<ul><li>Updated YUICompressor .NET to 2.2.0</li></ul>
+* Updated YUICompressor .NET to 2.2.0
+
 -
 December 2, 2012
 -
@@ -123,12 +125,14 @@ December 2, 2012
 
 ### Razor View Engine - Routing Integration 1.0.1
 * Initial release
+
 -
 November 8, 2012
 -
 <br/>
 ### General
 * Visual Studio project templates completed
+
 -
 November 6, 2012
 -
