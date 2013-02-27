@@ -53,6 +53,7 @@ February 26, 2013
 ### Razor View Engine - Routing Integration 4.0.0
 * Major version update due to breaking change in dependency
 * Updated JuniorCommon to 3.0.0
+
 -
 February 23, 2013
 -
@@ -62,6 +63,7 @@ February 23, 2013
 
 ### Razor View Engine 2.0.2
 * Corrected exception message that did not contain generic type parameter
+
 -
 January 27, 2013
 -
