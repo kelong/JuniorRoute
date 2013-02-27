@@ -6,14 +6,61 @@ root: ../
 {{ page.title }}
 =
 <br/>
+February 26, 2013
+-
+### General
+* All assemblies now target .NET Framework 4.5
+
+### ASP.net Integration 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+
+### ASP.net Integration Diagnostics 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+
+### Assets 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+
+### Assets - YUICompressor .NET 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+
+### Auto-routing 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+
+### Core 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+
+### Core Diagnostics 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+* Updated Spark to 1.7.5.1
+
+### Diagnostics 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+* Updated Spark to 1.7.5.1
+
+### Razor View Engine 3.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+
+### Razor View Engine - Routing Integration 4.0.0
+* Major version update due to breaking change in dependency
+* Updated JuniorCommon to 3.0.0
+-
 February 23, 2013
 -
 <br/>
 ### Razor View Engine 2.0.3
-<ul><li>Added missing WriteAttribute implementating to Razor template base class</li></ul>
+* Added missing WriteAttribute implementating to Razor template base class
 
 ### Razor View Engine 2.0.2
-<ul><li>Corrected exception message that did not contain generic type parameter</li></ul>
+* Corrected exception message that did not contain generic type parameter
 -
 January 27, 2013
 -
@@ -76,13 +123,13 @@ December 2, 2012
 
 ### Razor View Engine - Routing Integration 1.0.1
 * Initial release
-
+-
 November 8, 2012
 -
 <br/>
 ### General
 * Visual Studio project templates completed
-
+-
 November 6, 2012
 -
 <br/>
