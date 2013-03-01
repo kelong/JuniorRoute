@@ -10,7 +10,8 @@ Creating [routes](routes.html) manually using the ```Route``` class is a time-co
 
 Auto-routing creates routes by scanning assemblies for classes called *endpoints*, then scanning those endpoints for methods. Routes are created from endpoints and methods using various filters and mappers. JuniorRoute provides several built-in filters and mappers for most common endpoint and method conventions. This technique allows developers to focus on writing endpoint logic rather than spending a lot of time configuring JuniorRoute.
 
-There are no base class, interface or attribute requirements for endpoints. There are two general requirements, however. Endpoints:
+There are no base class, interface or attribute requirements for endpoints. There are three general requirements, however. Endpoints:
+* must be public
 * must not be abstract or static (i.e., it must be instantiatable)
 * must be a reference type (i.e., a class)
 

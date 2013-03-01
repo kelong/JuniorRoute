@@ -445,6 +445,24 @@ public class Person
 }
 {% endhighlight %}
 
+Ignoring Mappers
+-
+The ```[IgnoreRestrictionMapperType]``` attribute may be applied to an endpoint method in order to ignore specific mappers during route generation. This proves useful when developers wish to map restrictions automatically most of the time while overriding the automatic behavior some of the time.
+
+In the below example, a ```[IgnoreRestrictionMapperType]``` instructs AutoRouteCollection to ignore ```UrlRelativePathFromRelativeClassNamespaceAndClassNameMapper``` when adding ```UrlRelativePathRestriction```s:
+
+{% highlight csharp %}
+public class Documentation
+{
+  [UrlRelativePath("docs")]
+  [IgnoreRestrictionMapperType(typeof(UrlRelativePathFromRelativeClassNamespaceAndClassNameMapper))]
+  public HtmlResponse Get()
+  {
+    ...
+  }
+}
+{% endhighlight %}
+
 Extensibility
 -
 Developers may create their own restriction mappers by implementing the ```IRestrictionMapper``` interface.

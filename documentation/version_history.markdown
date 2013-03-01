@@ -6,6 +6,19 @@ root: ../
 {{ page.title }}
 =
 <br/>
+February 28, 2013
+-
+<br/>
+### Core Diagnostics 3.0.1
+* Resolved relative URLs in route table diagnostics UI now display as block elements for easier clickability
+* Empty resolved relative URLs in route table diagnostics UI now display as /
+
+### Auto-routing 4.0.0
+* Major version update due to breaking change
+* Endpoints must now be public
+* Added attributes that allow ignoring specific mapper types during route generation
+
+-
 February 26, 2013
 -
 <br/>
@@ -13,45 +26,45 @@ February 26, 2013
 * All assemblies now target .NET Framework 4.5
 
 ### ASP.net Integration 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 ### ASP.net Integration Diagnostics 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 ### Assets 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 ### Assets - YUICompressor .NET 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 ### Auto-routing 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 ### Core 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 ### Core Diagnostics 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 * Updated Spark to 1.7.5.1
 
 ### Diagnostics 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 * Updated Spark to 1.7.5.1
 
 ### Razor View Engine 3.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 ### Razor View Engine - Routing Integration 4.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated JuniorCommon to 3.0.0
 
 -
@@ -94,32 +107,32 @@ December 2, 2012
 * Removed old RazorEngine implementation
 
 ### ASP.net Integration 2.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Added missing paramName parameters to some uses of ```ArgumentException```
 
 ### ASP.net Integration Diagnostics 2.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated Spark to 1.7.5
 
 ### Assets 2.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 
 ### Assets - YUICompressor .NET 2.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 
 ### Auto-routing 2.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated Json.NET to 4.5.11
 
 ### Core 2.0.0
 * HashSetExtensions is now SetExtensions; extends ```ISet<>``` instead of ```HashSet```
 
 ### Core Diagnostics 2.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated Spark to 1.7.5
 
 ### Diagnostics 2.0.0
-* Major version update due to breaking change in dependency
+* Major version update due to breaking change
 * Updated Spark to 1.7.5
 
 ### Razor View Engine 1.0.1

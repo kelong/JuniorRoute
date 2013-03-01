@@ -59,6 +59,24 @@ public class Documentation
 }
 {% endhighlight %}
 
+Ignoring Mappers
+-
+The ```[IgnoreResolvedRelativeUrlMapperType]``` attribute may be applied to an endpoint method in order to ignore specific mappers during route generation. This proves useful when developers wish to map resolved relative URLs automatically most of the time while overriding the automatic behavior some of the time.
+
+In the below example, a ```[IgnoreResolvedRelativeUrlMapperType]``` instructs AutoRouteCollection to ignore ```ResolvedRelativeUrlFromRelativeClassNamespaceAndClassNameMapper``` when determining the resolved relative URL:
+
+{% highlight csharp %}
+public class Documentation
+{
+  [ResolvedRelativeUrl("docs")]
+  [IgnoreResolvedRelativeUrlMapperType(typeof(ResolvedRelativeUrlFromRelativeClassNamespaceAndClassNameMapper))]
+  public HtmlResponse Get()
+  {
+    ...
+  }
+}
+{% endhighlight %}
+
 Extensibility
 -
 Developers may create their own resolved relative URL mappers by implementing the ```IResolvedRelativeUrlMapper``` interface.
