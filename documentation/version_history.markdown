@@ -19,7 +19,7 @@ March 6, 2013
 
 ### Core 3.2.0
 * Redesigned anti-CSRF feature
-* Endpoint methods may now be marked async and return Task or Task<T> where T : IResponse
+* Endpoint methods may now be marked async and return Task or Task&lt;T&gt; where T : IResponse
 
 -
 March 2, 2013
