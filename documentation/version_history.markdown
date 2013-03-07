@@ -6,6 +6,42 @@ root: ../
 {{ page.title }}
 =
 <br/>
+March 6, 2013
+-
+<br/>
+### ASP.net Integration 3.2.0
+* Updated to support redesigned anti-CSRF feature
+* AspNetHttpHandler now derives from HttpTaskAsyncHandler to support async endpoint methods
+
+### Auto-routing 4.2.0
+* Added DefaultHtmlGenerator implementation to support new anti-CSRF design
+* Added new IResponseContext interface and implementation
+
+### Core 3.2.0
+* Redesigned anti-CSRF feature
+* Endpoint methods may now be marked async and return Task or Task<T> where T : IResponse
+
+-
+March 2, 2013
+-
+<br/>
+### ASP.net Integration 3.1.0
+* AspNetHttpHandler now performs anti-CSRF validation
+
+### Auto-routing 4.0.1
+* Added missing default parameter to forms authentication helper methods
+
+### Core 3.1.0
+* Added anti-CSRF feature
+
+-
+March 1, 2013
+-
+<br/>
+### Razor View Engine 3.0.1
+* Fixed bug in template compilation
+
+-
 February 28, 2013
 -
 <br/>
