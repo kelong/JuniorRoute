@@ -126,7 +126,7 @@ January 27, 2013
 * Fixed a critical bug in ```TemplateCodeBuilder``` where only the first template type implementation would be built correctly
 
 ### Razor View Engine - Routing Integration 2.0.1
-* <code>ITemplateRepository</code> and <code>FileSystemRepository</code> can now retrieve templates in addition to executing them
+* ```ITemplateRepository``` and ```FileSystemRepository``` can now retrieve templates in addition to executing them
 
 ### Assets - YUICompressor .NET 2.1.1
 * Updated YUICompressor .NET to 2.2.0
