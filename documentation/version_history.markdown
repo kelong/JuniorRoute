@@ -13,7 +13,7 @@ March 6, 2013
 * Updated to support redesigned anti-CSRF feature
 * AspNetHttpHandler now derives from HttpTaskAsyncHandler to support async endpoint methods
 
-### Auto-routing 4.2.0
+### Auto-routing 4.1.0
 * Added DefaultHtmlGenerator implementation to support new anti-CSRF design
 * Added new IResponseContext interface and implementation
 
