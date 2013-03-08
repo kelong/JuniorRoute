@@ -6,6 +6,18 @@ root: ../
 {{ page.title }}
 =
 <br/>
+March 7, 2013
+-
+<br/>
+### General
+* Updated project templates to use latest versions of all packages
+* Project templates now target .NET Framework 4.5 and require Visual Studio 2012
+
+### Razor View Engine - Routing Integration 5.0.0
+* Major version update due to breaking change
+* FileSystemRepositoryConfiguration renamed to DebugAttributeConfiguration; automatically reads system.web/compilation/@debug
+
+-
 March 6, 2013
 -
 <br/>
