@@ -8,7 +8,6 @@ root: ../
 <br/>
 Future
 -
-<br/>
 * Documentation updates for March changes
 
 -
