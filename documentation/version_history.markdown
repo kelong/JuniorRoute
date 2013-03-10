@@ -13,6 +13,7 @@ Future
 -
 March 10, 2013
 -
+<br/>
 ### Assets 3.0.1
 * Fixed Bundle class bug that was causing assets to be duplicated when retrieving bundle contents
 
