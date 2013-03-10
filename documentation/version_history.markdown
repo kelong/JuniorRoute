@@ -6,6 +6,18 @@ root: ../
 {{ page.title }}
 =
 <br/>
+Future
+-
+<br/>
+* Documentation updates for March changes
+
+-
+March 10, 2013
+-
+### Assets 3.0.1
+* Fixed Bundle class bug that was causing assets to be duplicated when retrieving bundle contents
+
+-
 March 7, 2013
 -
 <br/>
