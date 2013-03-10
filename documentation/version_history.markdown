@@ -17,6 +17,9 @@ March 10, 2013
 ### Assets 3.0.1
 * Fixed Bundle class bug that was causing assets to be duplicated when retrieving bundle contents
 
+### Core 3.3.1
+* Added more efficient route-retrieval methods to RouteCollection and updated UrlResolver to use the new methods
+
 -
 March 7, 2013
 -
