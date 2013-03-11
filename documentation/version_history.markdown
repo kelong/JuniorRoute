@@ -14,11 +14,27 @@ Future
 March 10, 2013
 -
 <br/>
-### Assets 3.0.1
+### ASP.net Integration 4.0.1
+* Major version update due to breaking change
+* Replaced IRequestContext and IResponseContext with several new endpoint method parameter mappers to allow injection of HTTP context objects while supporting async/await; updated associated objects
+
+### Assets 4.0.1
+* Major version update due to breaking change
+* Replaced IRequestContext and IResponseContext with several new endpoint method parameter mappers to allow injection of HTTP context objects while supporting async/await; updated associated objects
 * Fixed Bundle class bug that was causing assets to be duplicated when retrieving bundle contents
 
-### Core 3.3.1
+### Auto-routing 4.0.1
+* Major version update due to breaking change
+* Replaced IRequestContext and IResponseContext with several new endpoint method parameter mappers to allow injection of HTTP context objects while supporting async/await; updated associated objects
+
+### Core 4.0.0
 * Added more efficient route-retrieval methods to RouteCollection and updated UrlResolver to use the new methods
+* Major version update due to breaking change
+* Replaced IRequestContext and IResponseContext with several new endpoint method parameter mappers to allow injection of HTTP context objects while supporting async/await; updated associated objects
+
+### Diagnostics 4.0.1
+* Major version update due to breaking change
+* Replaced IRequestContext and IResponseContext with several new endpoint method parameter mappers to allow injection of HTTP context objects while supporting async/await; updated associated objects
 
 -
 March 7, 2013
