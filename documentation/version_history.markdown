@@ -11,6 +11,16 @@ Future
 * Documentation updates for March changes
 
 -
+March 13, 2013
+-
+<br/>
+### Auto-routing 5.0.2
+* Fixed a bug where endpoint methods returning void were not being invoked
+
+### Core 4.1.0
+* Added a Route.RespondWithNoContent overload that executes a delegate before responding with HTTP 304
+
+-
 March 10, 2013
 -
 <br/>
@@ -23,7 +33,7 @@ March 10, 2013
 * Replaced IRequestContext and IResponseContext with several new endpoint method parameter mappers to allow injection of HTTP context objects while supporting async/await; updated associated objects
 * Fixed Bundle class bug that was causing assets to be duplicated when retrieving bundle contents
 
-### Auto-routing 4.0.1
+### Auto-routing 5.0.1
 * Major version update due to breaking change
 * Replaced IRequestContext and IResponseContext with several new endpoint method parameter mappers to allow injection of HTTP context objects while supporting async/await; updated associated objects
 
