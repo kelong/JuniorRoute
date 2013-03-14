@@ -11,6 +11,13 @@ Future
 * Documentation updates for March changes
 
 -
+March 14, 2013
+-
+<br/>
+### Auto-routing 5.1.0
+* Added methods to AutoRouteCollection to allow adding multiple bundles with one method call
+
+-
 March 13, 2013
 -
 <br/>
