@@ -14,23 +14,28 @@ Future
 March 14, 2013
 -
 <br/>
+### ASP.net Integration 5.0.0
+* Major version update due to breaking change
+
 ### Auto-routing 5.1.0
 * Added methods to AutoRouteCollection to allow adding multiple bundles with one method call
+* Fixed a bug where endpoint methods returning void were not being invoked
+
+### Core 5.0.1
+* Major version update due to breaking change
+* Added a Route.RespondWithNoContent overload that executes a delegate before responding with HTTP 304
+* Converted Response class' static factory methods to instance methods to allow for better flexiblity when setting status codes
+* Fixed bug where JsonResponse's configurationDelegate was not being passed to the base class constructor
 
 -
 March 13, 2013
 -
 <br/>
-### ASP.net Integration 5.0.0
-* Major version update due to breaking change
-
-### Auto-routing 5.1.0
+### Auto-routing 5.0.2
 * Fixed a bug where endpoint methods returning void were not being invoked
 
-### Core 5.0.0
-* Major version update due to breaking change
+### Core 4.1.0
 * Added a Route.RespondWithNoContent overload that executes a delegate before responding with HTTP 304
-* Converted Response class' static factory methods to instance methods to allow for better flexiblity when setting status codes
 
 -
 March 10, 2013
