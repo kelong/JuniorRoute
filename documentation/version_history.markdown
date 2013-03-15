@@ -21,11 +21,16 @@ March 14, 2013
 March 13, 2013
 -
 <br/>
-### Auto-routing 5.0.2
+### ASP.net Integration 5.0.0
+* Major version update due to breaking change
+
+### Auto-routing 5.1.0
 * Fixed a bug where endpoint methods returning void were not being invoked
 
-### Core 4.1.0
+### Core 5.0.0
+* Major version update due to breaking change
 * Added a Route.RespondWithNoContent overload that executes a delegate before responding with HTTP 304
+* Converted Response class' static factory methods to instance methods to allow for better flexiblity when setting status codes
 
 -
 March 10, 2013
