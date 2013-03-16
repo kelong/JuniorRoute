@@ -17,6 +17,9 @@ March 16, 2013
 ### ASP.net Integration 5.0.1
 * Corrected output of DescriptiveTextStatusCodeHandler
 
+### Core 5.0.2
+* Added == and != operators to StatusAndSubStatusCode
+
 -
 March 14, 2013
 -
