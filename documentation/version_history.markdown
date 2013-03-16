@@ -11,6 +11,13 @@ Future
 * Documentation updates for March changes
 
 -
+March 16, 2013
+-
+<br/>
+### ASP.net Integration 5.0.1
+* Corrected output of DescriptiveTextStatusCodeHandler
+
+-
 March 14, 2013
 -
 <br/>
