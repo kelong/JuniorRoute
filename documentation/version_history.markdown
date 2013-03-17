@@ -13,6 +13,9 @@ Future
 March 17, 2013
 -
 </br/>
+### ASP.net Integration 8.0.0
+* Major version update due to breaking change
+
 ### Core 6.0.0
 * Major version update due to breaking change
 * Response class now exposes a way to control the HttpResponse.TrySkipIisCustomErrors property
