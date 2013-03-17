@@ -20,6 +20,10 @@ March 16, 2013
 * Added support for global application error handlers
 * Added request filter concept to control whether JuniorRoute remaps the current HTTP handler to its own handler or whether it defers to other HTTP handlers
 
+### ASP.net Integration Diagnostics 4.0.0
+* Major version update due to breaking change
+* Added request filters and error handlers to view
+
 ### Core 5.1.0
 * Added == and != operators to StatusAndSubStatusCode
 * Added Response.StatusCode overload
