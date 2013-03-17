@@ -14,11 +14,14 @@ Future
 March 16, 2013
 -
 <br/>
-### ASP.net Integration 5.0.1
+### ASP.net Integration 6.0.0
+* Major version update due to breaking change
 * Corrected output of DescriptiveTextStatusCodeHandler
+* Added support for global application error handlers
 
-### Core 5.0.2
+### Core 5.1.0
 * Added == and != operators to StatusAndSubStatusCode
+* Added Response.StatusCode overload
 
 -
 March 14, 2013
