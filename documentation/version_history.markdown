@@ -9,6 +9,13 @@ root: ../
 Future
 -
 * Documentation updates for March changes
+-
+March 17, 2013
+-
+</br/>
+### Core 6.0.0
+* Major version update due to breaking change
+* Response class now exposes a way to control the HttpResponse.TrySkipIisCustomErrors property
 
 -
 March 16, 2013
