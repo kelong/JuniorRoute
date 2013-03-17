@@ -14,10 +14,11 @@ Future
 March 16, 2013
 -
 <br/>
-### ASP.net Integration 6.0.0
+### ASP.net Integration 7.0.0
 * Major version update due to breaking change
 * Corrected output of DescriptiveTextStatusCodeHandler
 * Added support for global application error handlers
+* Added request filter concept to control whether JuniorRoute remaps the current HTTP handler to its own handler or whether it defers to other HTTP handlers
 
 ### Core 5.1.0
 * Added == and != operators to StatusAndSubStatusCode
