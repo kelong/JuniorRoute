@@ -9,6 +9,18 @@ root: ../
 Future
 -
 * Documentation updates for March changes
+
+-
+March 19, 2013
+-
+<br/>
+### Auto-routing 5.1.2
+* Anti-CSRF nonces are now only validated on form POSTs
+
+### Core 6.0.0
+* Major version update due to breaking change
+* Several classes renamed for consistency
+
 -
 March 17, 2013
 -
