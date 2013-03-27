@@ -9,6 +9,7 @@ root: ../
 Future
 -
 * Documentation updates for March changes
+* Visual Studio template updates for March changes
 
 -
 March 19, 2013
